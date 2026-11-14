@@ -1,163 +1,163 @@
 # PokePonche Predict 🎯
 
-**Predicción de asistencia a quedadas de Pokémon GO mediante CatBoost, registros de participación y un contador de interesados (RSVP).**
+**Predicting attendance at Pokémon GO community meetups using CatBoost, participation records, and an RSVP interest counter.**
 
-![Asistencia real frente a predicha](assets/01_tendencia_real_vs_prediccion.png)
+![Actual vs. predicted attendance](assets/01_tendencia_real_vs_prediccion.png)
 
-> **Resultado principal:** **MAE de 6.75 personas por quedada** en **81 eventos de prueba**, utilizando el contador retrospectivamente reconstruido de participantes interesados. La mediana del error absoluto fue **5.43 personas**. Estos resultados NO representan una validación prospectiva con capturas reales del contador al inicio.
+> **Key result:** **MAE of 6.75 people per meetup** across **81 test events**, using a retrospectively reconstructed count of interested participants. The median absolute error was **5.43 people**. These results do NOT constitute prospective validation using actual RSVP counter snapshots captured at the start of events.
 
-## 1. Objetivo
+## 1. Objective
 
-Predecir la cantidad de usuarios que registrarán un `CHECKED_IN` en una quedada de **Pokeponche de Frutas [Puebla]**, para apoyar la planificación de actividades y recursos. El problema es de **regresión supervisada**, con objetivo numérico `checkins` por evento. Las fechas abarcan noviembre de 2023 a noviembre de 2026.
+Predict the number of users who will record a `CHECKED_IN` at a **Pokeponche de Frutas [Puebla]** meetup to support activity and resource planning. This is a **supervised regression** problem, with the numeric target `checkins` for each event. The dataset spans November 2023 through November 2026.
 
-## 2. Datos: qué se entrenó realmente
+## 2. Data: What Was Actually Used for Training
 
-| Concepto | Magnitud | Función |
+| Item | Count | Role |
 |---|---:|---|
-| Quedadas | **548** | **548 observaciones del modelo**; cada fila es un evento |
-| Registros individuales | **33,848** | Historial de interacción de usuarios para calcular características agregadas |
-| Usuarios distintos | **5,131** | Historial seudonimizado; se preserva la recurrencia sin revelar IDs originales |
-| Check-ins | **23,032** | Suma del objetivo entre las quedadas |
-| Eventos del test final | **81** | Evaluación cronológica reservada |
+| Meetups | **548** | **548 model observations**; each row represents one event |
+| Individual records | **33,848** | User interaction history used to compute aggregated features |
+| Unique users | **5,131** | Pseudonymized histories preserve repeat participation without exposing original IDs |
+| Check-ins | **23,032** | Total target count across all meetups |
+| Final test events | **81** | Held-out chronological evaluation |
 
-**Importante:** no entrenamos un modelo con 33,848 ejemplos independientes de asistencia. El modelo final **aprende sobre las 548 quedadas**; las 33,848 filas individuales se usan para obtener, antes de cada fecha, variables de actividad, retención y asistencia recurrente, y para reconstruir el contador RSVP. Confundir estos conceptos inflaría artificialmente la descripción del tamaño de entrenamiento.
+**Important:** We did not train the model on 33,848 independent attendance examples. The final model **learns from 548 meetups**; the 33,848 individual records are used to derive activity, retention, and repeat-attendance features from prior dates, and to reconstruct the RSVP counter. Confusing these two levels would artificially inflate the reported training sample size.
 
 
-## 3. Metodología
+## 3. Methodology
 
-1. **Integración:** conciliación por `event_id` entre el maestro de 548 eventos y los registros individuales; validación de 23,032 check-ins sin duplicados por usuario/evento.
-2. **Características de calendario y evento:** día de la semana, estacionalidad, tipo de evento y distinción entre evento global principal y preparatorio.
-3. **Historial sin mirar hacia adelante:** medias/medianas móviles, últimos eventos del mismo tipo, usuarios activos 30/90/180 días, retención y conversión histórica; solo se usan eventos de días anteriores para estas variables.
-4. **RSVP:** reconstrucción de interesados `CHECKED_IN + ACCEPTED` por quedada para la evaluación de la Etapa 5.
-5. **División temporal:** entrenamiento, validación y prueba por fechas ordenadas, sin repartir eventos de un mismo día entre splits; **81 quedadas** quedan reservadas para prueba final.
-6. **Optimización:** **20 trials de Optuna (TPE, semilla 42)** en CatBoost; tres ventanas de validación temporal para escoger hiperparámetros y estrategia.
-7. **Modelo final:** **CatBoost de conversión**, que estima una proporción de interesados que se convertirán en check-ins. Gana por validación, no por escoger retrospectivamente el test.
+1. **Data integration:** Join the master dataset of 548 events with individual records using `event_id`; validate 23,032 check-ins without duplicate user/event combinations.
+2. **Calendar and event features:** Day of the week, seasonality, event type, and the distinction between major global events and preparatory events.
+3. **Historical features without look-ahead:** Rolling means/medians, recent events of the same type, active users over 30/90/180 days, retention, and historical conversion; these features use only events from previous dates.
+4. **RSVP:** Reconstruct interested participants as `CHECKED_IN + ACCEPTED` for each meetup when evaluating Stage 5.
+5. **Temporal split:** Divide training, validation, and test data chronologically, without splitting events from the same day across sets; reserve **81 meetups** for the final test.
+6. **Optimization:** Run **20 Optuna trials (TPE, seed 42)** for CatBoost, using three temporal validation windows to select hyperparameters and the modeling strategy.
+7. **Final model:** **Conversion-based CatBoost**, which estimates the proportion of interested participants who will check in. It was selected through validation, not by retrospectively choosing the best test result.
 
-### Modelos y técnicas evaluadas a lo largo del proyecto
+### Models and Techniques Evaluated Throughout the Project
 
-| Experimento | Técnicas | Qué aprendimos |
+| Experiment | Techniques | Key Findings |
 |---|---|---|
-| Etapa 1 — línea base | Medianas históricas, Random Forest y Gradient Boosting | Establecer una referencia temporal y entender la estacionalidad |
-| Etapa 2 — alternativas | Gradient Boosting, CatBoost, MLP en PyTorch | CatBoost funcionó mejor en el escenario anticipado; separar globales de eventos normales es importante |
-| Etapa 3 — búsqueda | Optuna, CatBoost con ponderación, transformación `log1p`, ajuste global | El mejor anticipado redujo MAE hasta ~16.78 |
-| Etapa 4 — actividad | Variables de usuarios únicos, recurrencia, historial de check-ins y RSVP experimental | Las variables individuales enriquecen el nivel de evento; el proxy RSVP es una señal más fuerte |
-| Etapa 5 — final | Conversión histórica suavizada, CatBoost directo, objetivo logarítmico y **CatBoost de conversión** | El ganador con proxy RSVP alcanzó **MAE 6.75** |
-| Etapa 6 — calibración (descartada) | Corrector especializado por cantidad de interesados | No mejoró MAE general (~6.76); se conservó Etapa 5 |
+| Stage 1 — Baselines | Historical medians, Random Forest, and Gradient Boosting | Establish a temporal benchmark and understand seasonality |
+| Stage 2 — Alternatives | Gradient Boosting, CatBoost, and a PyTorch MLP | CatBoost performed best for advance predictions; distinguishing global events from ordinary meetups matters |
+| Stage 3 — Hyperparameter search | Optuna, weighted CatBoost, `log1p` transformation, global-event adjustments | The best advance-prediction model reduced MAE to approximately 16.78 |
+| Stage 4 — Community activity | Unique-user features, repeat participation, check-in history, and experimental RSVP features | Individual records enrich event-level features; the RSVP proxy is a stronger signal |
+| Stage 5 — Final model | Smoothed historical conversion, direct CatBoost, logarithmic target, and **conversion-based CatBoost** | The winning RSVP-proxy model achieved an **MAE of 6.75** |
+| Stage 6 — Calibration (not adopted) | A specialized correction based on the number of interested participants | It did not improve overall MAE (~6.76); Stage 5 was retained |
 
-En el repositorio publicamos **el pipeline final y los módulos de preparación de los que depende**, no todos los modelos descartados. La tabla documenta los experimentos anteriores sin convertir el repositorio en un archivo de versiones.
+This repository includes **the final pipeline and its required feature-preparation modules**, not every discarded model. The table documents the earlier experiments without turning the repository into an archive of versions.
 
-## 4. Interfaz del modelo: entradas, salida y arquitectura
+## 4. Model Interface: Inputs, Output, and Architecture
 
-### 4.1 ¿Qué necesita para hacer una predicción?
+### 4.1 What Does the Model Need to Make a Prediction?
 
-El predictor calcula el número esperado de check-ins **para un evento completo** (no predice una clase por usuario). Requiere tres bloques:
+The predictor estimates the expected number of check-ins **for an entire event** (it does not classify individual users). It requires three groups of inputs:
 
-| Bloque | Ejemplos | Procedencia / disponibilidad |
+| Input group | Examples | Source / Availability |
 |---|---|---|
-| **Evento y fecha** | `fecha_puebla`, `tipo_campfire`, `nombre_campfire`, fase global o preparatoria, características de bonos y Pokémon | Calendario y descripción del evento, antes de la predicción |
-| **Histórico de la comunidad** | Asistencia de las últimas 5/10 quedadas, últimos eventos del mismo tipo, participantes activos en 30/90/180 días, retención y conversión anterior | Calculado desde eventos y usuarios **anteriores a la fecha objetivo** |
-| **Contador de interesados** | Total de personas que marcaron «Voy a asistir» en Campfire | En operación: contador **observado en el momento** de la predicción |
+| **Event and date** | `fecha_puebla`, `tipo_campfire`, `nombre_campfire`, global or preparatory event phase, bonuses, and Pokémon-related features | Event calendar and description, available before prediction |
+| **Community history** | Attendance over the last 5/10 meetups, recent events of the same type, active participants over 30/90/180 days, retention, and prior conversion | Computed from events and users **before the target date** |
+| **Interested-participant counter** | Total number of people who selected “Going” in Campfire | In actual use: the count **observed at prediction time** |
 
-La fecha y el contador, **por sí solos, no bastan** para reproducir el resultado: también hace falta el histórico para calcular el vector de variables de cada evento. Los identificadores y nicknames no se suministran al modelo como variables predictivas: únicamente se usan para contar usuarios distintos y reconstruir actividad histórica.
+The date and counter **alone are not sufficient** to reproduce the prediction: historical data are also needed to calculate the event's feature vector. User IDs and nicknames are not predictive model inputs; they are only used to count unique users and reconstruct historical activity.
 
-**Salida:** una estimación numérica no negativa de `checkins` para la quedada. Se puede redondear al entero más cercano al presentarla; las métricas del test se calcularon con predicciones continuas.
+**Output:** A non-negative numeric estimate of `checkins` for the meetup. It may be rounded to the nearest whole person for display; test metrics were calculated using continuous predictions.
 
-### 4.2 Arquitectura exacta de la versión seleccionada
+### 4.2 Exact Architecture of the Selected Model
 
-El archivo `models/modelo_catboost.cbm` corresponde a un **`CatBoostRegressor`** basado en *gradient boosting* de árboles de decisión.
+The file `models/modelo_catboost.cbm` contains a **`CatBoostRegressor`** based on decision-tree *gradient boosting*.
 
-| Componente | Configuración del modelo final |
+| Component | Final Model Configuration |
 |---|---|
-| Tipo | Regresión con CatBoost, árboles simétricos (*oblivious trees*) |
-| Número de árboles (`iterations`) | **400** |
-| Profundidad (`depth`) | **3** (hasta 8 hojas por árbol) |
-| Tasa de aprendizaje (`learning_rate`) | **0.0337569126** |
-| Regularización L2 (`l2_leaf_reg`) | **4.6493457** |
-| Función de pérdida (`loss_function`) | **MAE** |
-| Semilla (`random_seed`) | **42** |
-| Variables que recibe el modelo guardado | **46**: 41 numéricas y 5 categóricas |
-| Búsqueda de hiperparámetros | **20 trials de Optuna**, con TPE y validación temporal |
+| Type | CatBoost regression with symmetric (*oblivious*) trees |
+| Number of trees (`iterations`) | **400** |
+| Tree depth (`depth`) | **3** (up to 8 leaves per tree) |
+| Learning rate (`learning_rate`) | **0.0337569126** |
+| L2 regularization (`l2_leaf_reg`) | **4.6493457** |
+| Loss function (`loss_function`) | **MAE** |
+| Random seed (`random_seed`) | **42** |
+| Features accepted by the saved model | **46**: 41 numerical and 5 categorical |
+| Hyperparameter search | **20 Optuna trials**, using TPE and temporal validation |
 
-**Objetivo aprendido:** el modelo ganador (`conversion`) no ajusta directamente el número de asistentes. Durante el entrenamiento utiliza:
+**Learned target:** The winning model (`conversion`) does not directly predict the number of attendees. During training, it uses:
 
 ```text
 conversion_observada = checkins_reales / max(interesados_total_proxy, 1)
 ```
 
-En la predicción produce una tasa estimada que se recorta al intervalo `[0, 1]` y luego se convierte a personas:
+At inference time, it produces an estimated rate, clips it to `[0, 1]`, and converts it into a count of people:
 
 ```text
 tasa_estimada = clip(modelo_catboost.predict(X_evento), 0, 1)
 checkins_estimados = max(0, tasa_estimada * interesados_observados)
 ```
 
-**Detalle de implementación:** `interesados_total_proxy` se extrae de la matriz `X` antes de llamar a `fit()` y a `predict()` en esta variante. Por eso **no aparece dentro de las 46 características almacenadas en el `.cbm`**, pero sí es un **parámetro imprescindible del predictor completo**, ya que multiplica la conversión estimada. El script `scripts/verificar_modelo.py` reproduce este mismo posprocesado.
+**Implementation detail:** In this variant, `interesados_total_proxy` is removed from the feature matrix `X` before calling `fit()` and `predict()`. This is why it **is not one of the 46 features stored in the `.cbm` file**, but it is still **an essential input to the complete predictor**, since the predicted conversion rate is multiplied by this count. The `scripts/verificar_modelo.py` script reproduces the same post-processing step.
 
-### 4.3 Las 46 variables utilizadas realmente
+### 4.3 The 46 Features Actually Used
 
-Las variables se calculan en `train_etapa2.py`, `train_etapa4_mejorada.py`, `train_etapa5.py` y `train_etapa5_rsvp.py`, antes de entregar la matriz a CatBoost.
+Features are calculated in `train_etapa2.py`, `train_etapa4_mejorada.py`, `train_etapa5.py`, and `train_etapa5_rsvp.py` before the feature matrix is passed to CatBoost.
 
-| Grupo | Entradas |
+| Group | Features |
 |---|---|
-| Calendario (9) | `is_weekend`, `year_offset`, `month`, `day_of_week`, `week_of_year`, `is_holiday_season`, `event_sequence`, `days_since_first_event`, `days_since_previous_event` |
-| Eventos globales y contexto (3) | `is_global_major_event`, `is_global_pre_event`, `days_until_main_event` |
-| Historial agregado de quedadas (8) | `prior_events_same_type`, `hist_last_5_mean`, `hist_last_10_mean`, `hist_last_10_median`, `hist_same_type_last_5_mean`, `hist_same_type_last_5_median`, `days_since_previous_same_type`, `prev_event_checkins` |
-| Atributos del evento y sus Pokémon (9) | `has_paid_bonus_evidence`, `has_free_bonus_evidence`, `has_assumed_free_bonus`, `has_exclusive_move_section`, `has_shiny_boost_evidence`, `has_pokemon_debut_evidence`, `has_paid_research_evidence`, `pokemon_label_missing`, `primary_pokemon_count` |
-| Actividad de usuarios (11) | `user_active_30d`, `user_active_90d`, `user_active_180d`, `user_checkins_30d`, `user_checkins_90d`, `user_retention_90d`, `users_with_3plus_prior_checkins`, `community_users_seen_prior`, `prior_conversion_10`, `prior_conversion_same_type`, `recent_accepted_mean_5` |
-| Conversión histórica adicional (1) | `conversion_historica_anterior` (suavizada hacia la tasa global reciente cuando existen pocos casos del mismo tipo) |
-| Variables categóricas (5) | `tipo_campfire`, `event_phase`, `event_family`, `major_event_subtype`, `month_label` |
+| Calendar (9) | `is_weekend`, `year_offset`, `month`, `day_of_week`, `week_of_year`, `is_holiday_season`, `event_sequence`, `days_since_first_event`, `days_since_previous_event` |
+| Global events and context (3) | `is_global_major_event`, `is_global_pre_event`, `days_until_main_event` |
+| Aggregated meetup history (8) | `prior_events_same_type`, `hist_last_5_mean`, `hist_last_10_mean`, `hist_last_10_median`, `hist_same_type_last_5_mean`, `hist_same_type_last_5_median`, `days_since_previous_same_type`, `prev_event_checkins` |
+| Event and Pokémon attributes (9) | `has_paid_bonus_evidence`, `has_free_bonus_evidence`, `has_assumed_free_bonus`, `has_exclusive_move_section`, `has_shiny_boost_evidence`, `has_pokemon_debut_evidence`, `has_paid_research_evidence`, `pokemon_label_missing`, `primary_pokemon_count` |
+| User activity (11) | `user_active_30d`, `user_active_90d`, `user_active_180d`, `user_checkins_30d`, `user_checkins_90d`, `user_retention_90d`, `users_with_3plus_prior_checkins`, `community_users_seen_prior`, `prior_conversion_10`, `prior_conversion_same_type`, `recent_accepted_mean_5` |
+| Additional historical conversion (1) | `conversion_historica_anterior` (smoothed toward the recent overall rate when few same-type events are available) |
+| Categorical features (5) | `tipo_campfire`, `event_phase`, `event_family`, `major_event_subtype`, `month_label` |
 
-En total: **41 numéricas + 5 categóricas = 46**. Las variables categóricas se procesan nativamente con CatBoost; no se aplicó *one-hot encoding* externo al modelo final. Las numéricas ausentes se codifican como `-99999` y las categóricas ausentes como `desconocido` en la matriz final. El orden de las 46 variables es el que espera el `.cbm`; no debe cambiarse en inferencia.
+Total: **41 numerical + 5 categorical = 46**. Categorical features are handled natively by CatBoost; no external *one-hot encoding* was applied to the final model. Missing numerical values are encoded as `-99999`, and missing categorical values as `desconocido` in the final feature matrix. The 46-feature order must match the order expected by the `.cbm` file and must not be changed during inference.
 
-### 4.4 Transformaciones y decisiones necesarias
+### 4.4 Required Transformations and Design Decisions
 
-1. **Normalización de eventos:** unión por `event_id`, comprobación de que cada evento tenga una sola fila, validación de check-ins y del estado RSVP sin duplicar personas.
-2. **Ingeniería de variables secuencial:** medias/medianas de eventos anteriores, actividad de usuarios por ventanas de 30/90/180 días y tasas de conversión. En un mismo día, las estadísticas se calculan antes de incorporar los resultados de las quedadas de esa fecha.
-3. **Regresión de conversión:** se aprende una tasa entre cero y uno y se transforma a check-ins multiplicándola por los interesados; las predicciones no negativas son la salida final.
-4. **Separación temporal y selección de modelos:** entrenamiento y validación previos al período final de 81 quedadas; Optuna prueba 20 combinaciones para CatBoost directo y después se comparan conversión histórica, predicción directa, transformación `log1p` y conversión con CatBoost.
-5. **Evaluación y publicación:** se reportan métricas calculadas sobre el conjunto temporal de prueba, se conserva el modelo original `.cbm` y se sustituyen identificadores y nicknames de participantes antes de preparar la copia pública.
+1. **Event normalization:** Join by `event_id`, verify that each event has exactly one row, and validate check-ins and RSVP statuses without double-counting participants.
+2. **Sequential feature engineering:** Compute means/medians from prior events, user activity over 30/90/180-day windows, and conversion rates. For multiple events on the same day, calculate historical statistics before incorporating outcomes from any event on that date.
+3. **Conversion regression:** Learn a rate between zero and one and convert it to check-ins by multiplying by the count of interested participants; the final output is non-negative.
+4. **Temporal split and model selection:** Train and validate on dates before the final 81-event test period; Optuna evaluates 20 combinations for direct CatBoost, followed by a comparison of historical conversion, direct prediction, `log1p` transformation, and conversion-based CatBoost.
+5. **Evaluation and publication:** Report metrics on the held-out temporal test set, retain the original `.cbm` model, and replace participant IDs and nicknames before preparing the public release.
 
-El código incluye componentes usados originalmente en experimentos anteriores, pero el modelo publicado usa **solo** la matriz del escenario `anticipado` **más** `conversion_historica_anterior`, y **no** las variables meteorológicas o rankings competitivos retrospectivos.
+The code includes components originally used in earlier experiments, but the published model uses **only** the `anticipado` (advance-prediction) feature matrix **plus** `conversion_historica_anterior`, and **does not** use retrospective weather variables or competitive rankings.
 
-## 5. Evaluación
+## 5. Evaluation
 
-**Período de prueba: 29/07/2026–10/11/2026; 81 quedadas.**
+**Test period: July 29, 2026 – November 10, 2026; 81 meetups.**
 
-| Métrica | Resultado |
+| Metric | Result |
 |---|---:|
-| MAE (error absoluto medio) | **6.75 personas** |
-| Mediana del error absoluto (Q2) | **5.43 personas** |
-| Primer cuartil (Q1) | 3.07 personas |
-| Tercer cuartil (Q3) | 9.26 personas |
-| Percentil 90 del error absoluto | 13.80 personas |
-| RMSE | 8.98 personas |
-| WAPE | 13.65 % |
+| MAE (mean absolute error) | **6.75 people** |
+| Median absolute error (Q2) | **5.43 people** |
+| First quartile (Q1) | 3.07 people |
+| Third quartile (Q3) | 9.26 people |
+| 90th percentile of absolute error | 13.80 people |
+| RMSE | 8.98 people |
+| WAPE | 13.65% |
 | R² | 0.972 |
-| Sesgo medio (predicho − real) | −0.08 personas |
+| Mean bias (predicted − actual) | −0.08 people |
 
-Interpretación: en el conjunto de prueba, **la mitad de los errores absolutos fue ≤5.43 personas** y **el 75 % fue ≤9.26**. Un MAE de 6.75 representa el promedio de magnitudes de los errores. 
+Interpretation: In the test set, **half of the absolute errors were ≤5.43 people**, and **75% were ≤9.26 people**. An MAE of 6.75 represents the average magnitude of prediction errors.
 
-### Tendencia temporal (visualización principal)
+### Attendance Over Time (Main Visualization)
 
-![Tendencia real vs predicción](assets/01_tendencia_real_vs_prediccion.png)
+![Actual vs. predicted attendance over time](assets/01_tendencia_real_vs_prediccion.png)
 
-Se muestran las 81 quedadas de prueba en orden temporal, sin agregar por mes ni ocultar eventos grandes.
+All 81 test meetups are shown in chronological order, without monthly aggregation or excluding large events.
 
-### Dispersión: reales vs predichos
+### Scatter Plot: Actual vs. Predicted Attendance
 
-![Dispersión real vs predicción](assets/02_dispersion_real_vs_prediccion.png)
+![Actual vs. predicted attendance scatter plot](assets/02_dispersion_real_vs_prediccion.png)
 
-La diagonal corresponde al valor ideal de una predicción exacta.
+The diagonal represents the ideal line of perfect predictions.
 
-### Distribución del error absoluto
+### Absolute Error Distribution
 
-![Diagrama de caja de errores](assets/04_boxplot_error.png)
+![Error box plot](assets/04_boxplot_error.png)
 
-Los cuartiles resumen la dispersión de los errores en personas, independientemente del volumen del evento.
+Quartiles summarize how errors are distributed in people, regardless of event attendance size.
 
-## 6. Cómo reproducir el entrenamiento
+## 6. Reproducing the Training Process
 
-Python 3.11–3.13, Windows PowerShell (también compatible con otras plataformas).
+Python 3.11–3.13, Windows PowerShell (also compatible with other platforms).
 
 ```powershell
 python -m venv .venv
@@ -166,21 +166,21 @@ python -m venv .venv
 .\.venv\Scripts\python.exe scripts\train_etapa5_rsvp.py --root . --trials 20
 ```
 
-El script carga los CSV seudonimizados en `data/`, reconstruye las variables de fecha y comportamiento, entrena los candidatos, usa validación temporal y crea `resultados_etapa5_rsvp/`. Los hiperparámetros probados y las salidas publicadas están en `results/`. **Reentrenar puede generar ligeras diferencias por versiones de bibliotecas o concurrencia**; por eso se incluye el modelo `.cbm` ganador original y las predicciones históricas.
+The script loads the pseudonymized CSV files from `data/`, reconstructs date- and behavior-based features, trains the candidate models, applies temporal validation, and creates `resultados_etapa5_rsvp/`. Tested hyperparameters and published outputs are available in `results/`. **Retraining may produce slight differences due to library versions or parallel execution**; therefore, the original winning `.cbm` file and historical predictions are included.
 
-Para comprobar el modelo guardado:
+To verify the saved model:
 
 ```powershell
 .\.venv\Scripts\python.exe scripts\verificar_modelo.py
 ```
 
-Para reconstruir los tres gráficos a partir de las predicciones publicadas:
+To regenerate the three charts from the published predictions:
 
 ```powershell
 .\.venv\Scripts\python.exe scripts\generar_graficos.py
 ```
 
-## 7. Estructura
+## 7. Repository Structure
 
 ```text
 PokePonche_Predict_GitHub/
@@ -192,17 +192,17 @@ PokePonche_Predict_GitHub/
 │   ├── dataset_maestro_548.csv
 │   └── registros_usuarios_pseudonimizados.csv
 ├── scripts/
-│   ├── train_etapa5_rsvp.py        # Pipeline final
-│   ├── train_etapa5.py             # Construcción de variables
-│   ├── train_etapa4_mejorada.py    # Historial por usuario
-│   ├── train_etapa3.py             # CV temporal
-│   ├── train_etapa2.py             # Calendario e históricos
-│   ├── fases_eventos.py            # Clasificación de preparatorios
+│   ├── train_etapa5_rsvp.py        # Final pipeline
+│   ├── train_etapa5.py             # Feature construction
+│   ├── train_etapa4_mejorada.py    # User-level history
+│   ├── train_etapa3.py             # Temporal cross-validation
+│   ├── train_etapa2.py             # Calendar and historical features
+│   ├── fases_eventos.py            # Preparatory-event classification
 │   ├── verificar_datos.py
 │   ├── verificar_modelo.py
 │   └── generar_graficos.py
 ├── models/
-│   └── modelo_catboost.cbm        # Pesos del ganador de 20 trials
+│   └── modelo_catboost.cbm        # Winning model from 20 trials
 ├── results/
 │   ├── predicciones_test.csv
 │   ├── metricas_test.csv
@@ -216,15 +216,15 @@ PokePonche_Predict_GitHub/
     └── 04_boxplot_error.png
 ```
 
-## 8. Privacidad y publicación
+## 8. Privacy and Publication
 
-Se publican **datos minimizados y seudonimizados**: `USUARIO1`, `USUARIO2`, etc. sustituyen simultáneamente el ID interno y el nickname de cada persona. Los identificadores reales de quedadas se sustituyen por `EVT0001`, etc. Se eliminaron perfiles, URL de evento, IDs de organizadores y otros campos originales que no son necesarios para reproducir el pipeline. La correspondencia original↔seudónimo **no se distribuye**.
+This repository includes **data minimization and pseudonymization**: `USUARIO1`, `USUARIO2`, etc. replace each person's internal ID and nickname consistently. Original meetup identifiers are replaced with `EVT0001`, etc. Profiles, event URLs, organizer IDs, and other original fields not needed to reproduce the pipeline were removed. The original-to-pseudonym mapping **is not distributed**.
 
 
-## Tecnologías
+## Technologies
 
-`Python` · `pandas` · `NumPy` · `CatBoost` · `Optuna` · `scikit-learn` · `Matplotlib` · `PyTorch` (explorado en Etapa 2)
+`Python` · `pandas` · `NumPy` · `CatBoost` · `Optuna` · `scikit-learn` · `Matplotlib` · `PyTorch` (explored in Stage 2)
 
-## Autoría y uso
+## Authorship and Usage
 
-Proyecto independiente de análisis de asistencia comunitaria. Los nombres Pokémon, Campfire y las marcas relacionadas pertenecen a sus respectivos titulares.
+Independent project analyzing community meetup attendance. Pokémon, Campfire, and related trademarks belong to their respective owners.
