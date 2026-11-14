@@ -1,14 +1,14 @@
-# PokePonche Predict
+# PokePonche Check-In Predictor
 
-**Predicting attendance at Pokémon GO community meetups using CatBoost, participation records, and an RSVP interest counter.**
+**Predicting Pokémon GO Campfire check-ins (`CHECKED_IN`) at community meetups using CatBoost, participation records, and an RSVP interest counter.**
 
-![Actual vs. predicted attendance](assets/01_tendencia_real_vs_prediccion.png)
+![Actual vs. predicted Campfire check-ins](assets/01_tendencia_real_vs_prediccion.png)
 
-> **Key result:** **MAE of 6.75 people per meetup** across **81 test events**, using a retrospectively reconstructed count of interested participants. The median absolute error was **5.43 people**. These results do NOT constitute prospective validation using actual RSVP counter snapshots captured at the start of events.
+> **Key result:** **MAE of 6.75 Campfire check-ins per meetup** across **81 test events**, using a retrospectively reconstructed count of interested participants. The median absolute error was **5.43 check-ins**. These results do NOT constitute prospective validation using actual RSVP counter snapshots captured at the start of events.
 
 ## 1. Objective
 
-Predict the number of users who will record a `CHECKED_IN` at a **Pokeponche de Frutas [Puebla]** meetup to support activity and resource planning. This is a **supervised regression** problem, with the numeric target `checkins` for each event. The dataset spans November 2023 through November 2026.
+Predict the number of **Campfire check-ins (`CHECKED_IN`)** recorded at each **Pokeponche de Frutas [Puebla]** meetup to support activity and resource planning. This is a **supervised regression** problem, with the numeric target `checkins` representing the number of Campfire check-ins per event—not the number of people who marked “Going”. The dataset spans November 2023 through November 2026.
 
 ## 2. Data: What Was Actually Used for Training
 
@@ -50,7 +50,7 @@ This repository includes **the final pipeline and its required feature-preparati
 
 ### 4.1 What Does the Model Need to Make a Prediction?
 
-The predictor estimates the expected number of check-ins **for an entire event** (it does not classify individual users). It requires three groups of inputs:
+The predictor estimates the expected number of **Campfire check-ins (`CHECKED_IN`) for an entire event** (it does not classify individual users). It requires three groups of inputs:
 
 | Input group | Examples | Source / Availability |
 |---|---|---|
@@ -125,27 +125,27 @@ The code includes components originally used in earlier experiments, but the pub
 
 | Metric | Result |
 |---|---:|
-| MAE (mean absolute error) | **6.75 people** |
-| Median absolute error (Q2) | **5.43 people** |
-| First quartile (Q1) | 3.07 people |
-| Third quartile (Q3) | 9.26 people |
-| 90th percentile of absolute error | 13.80 people |
-| RMSE | 8.98 people |
+| MAE (mean absolute error) | **6.75 check-ins** |
+| Median absolute error (Q2) | **5.43 check-ins** |
+| First quartile (Q1) | 3.07 check-ins |
+| Third quartile (Q3) | 9.26 check-ins |
+| 90th percentile of absolute error | 13.80 check-ins |
+| RMSE | 8.98 check-ins |
 | WAPE | 13.65% |
 | R² | 0.972 |
-| Mean bias (predicted − actual) | −0.08 people |
+| Mean bias (predicted − actual) | −0.08 check-ins |
 
-Interpretation: In the test set, **half of the absolute errors were ≤5.43 people**, and **75% were ≤9.26 people**. An MAE of 6.75 represents the average magnitude of prediction errors.
+Interpretation: In the test set, **half of the absolute errors were ≤5.43 check-ins**, and **75% were ≤9.26 check-ins**. An MAE of 6.75 represents the average magnitude of prediction errors.
 
-### Attendance Over Time (Main Visualization)
+### Campfire Check-ins Over Time (Main Visualization)
 
-![Actual vs. predicted attendance over time](assets/01_tendencia_real_vs_prediccion.png)
+![Actual vs. predicted Campfire check-ins over time](assets/01_tendencia_real_vs_prediccion.png)
 
 All 81 test meetups are shown in chronological order, without monthly aggregation or excluding large events.
 
-### Scatter Plot: Actual vs. Predicted Attendance
+### Scatter Plot: Actual vs. Predicted Campfire Check-ins
 
-![Actual vs. predicted attendance scatter plot](assets/02_dispersion_real_vs_prediccion.png)
+![Actual vs. predicted Campfire check-ins scatter plot](assets/02_dispersion_real_vs_prediccion.png)
 
 The diagonal represents the ideal line of perfect predictions.
 
