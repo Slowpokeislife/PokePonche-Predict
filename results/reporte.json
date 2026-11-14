@@ -1,0 +1,25 @@
+{
+  "eventos": 548,
+  "checkins": 23032,
+  "rsvp_columna": "interesados_total_proxy = CHECKED_IN + ACCEPTED",
+  "ganador_validacion": "conversion",
+  "metricas_test": {
+    "n": 81,
+    "MAE": 6.7495,
+    "RMSE": 8.9778,
+    "WAPE_pct": 13.651,
+    "dentro_margen_pct": 50.617,
+    "pequenos_dentro_5_pct": 52.055,
+    "grandes_dentro_15_pct": 37.5,
+    "bias": -0.083
+  },
+  "trials": 20,
+  "mejores_parametros": {
+    "iterations": 400,
+    "depth": 3,
+    "learning_rate": 0.03375691259416854,
+    "l2_leaf_reg": 4.649345697900868
+  },
+  "limitacion": "El CSV registra estados finales sin timestamp. Esta evaluacion usa el total reconstruido como proxy de contador visible. No demuestra que ese total se conociera al inicio del evento.",
+  "uso_operativo": "En un evento futuro, usar el contador visible real de Voy a asistir al inicio y las mismas variables ex-ante; nunca usar los check-ins del evento para crear ese contador."
+}

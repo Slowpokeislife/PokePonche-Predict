@@ -1,0 +1,82 @@
+﻿event_id,fecha_puebla,nombre_campfire,tipo_campfire,event_phase,checkins,interesados_total_proxy,prediccion
+EVT0277,29/07/2026,Hora Legendaria de KYUREM [✨],raid_hour,not_global,46,57,39.68
+EVT0398,30/07/2026,HORA DESTACADA BIDOOF,spotlight_hour,not_global,18,32,23.32
+EVT0005,31/07/2026,Yo Soy Tu Amigo Fiel ✨️🌟,friendship_friday,not_global,16,18,12.7
+EVT0029,01/08/2026,RILLABOOM GIGAMAX [Shiny Disponible],max_battle,not_global,180,206,152.79
+EVT0421,03/08/2026,Lunes max: Magmar [Shiny Disponible],max_monday,not_global,24,40,29.43
+EVT0300,05/08/2026,Hora de incursiones: Trío del lago [Shinys Disponibles],raid_hour,not_global,41,51,36.45
+EVT0292,06/08/2026,Hora destacada: Delibird [Shiny Disponible],spotlight_hour,not_global,32,49,35.5
+EVT0493,07/08/2026,Los amigos son amigos para siempre y por siempre ✨,friendship_friday,not_global,10,33,23.95
+EVT0362,08/08/2026,Día de eclosiones: Fuego y hielo [Shinys Disponibles ],hatch_day,not_global,55,76,54.34
+EVT0271,10/08/2026,Lunes Max BELDUM [Shiny Disponible],max_monday,not_global,31,35,25.33
+EVT0516,12/08/2026,Hora Legendaria GROUDON [Shiny Disponible],raid_hour,not_global,38,47,33.59
+EVT0178,13/08/2026,Hora Destacada de Wurmple,spotlight_hour,not_global,14,18,13.04
+EVT0355,14/08/2026,Viernes entre AMIGOS 🙌,friendship_friday,not_global,18,21,15.65
+EVT0463,16/08/2026,Comunnity day NICKIT,community_day,not_global,76,103,78.92
+EVT0250,17/08/2026,Lunes Max: Magikarp [Shiny Disponible],max_monday,not_global,45,59,43.88
+EVT0182,19/08/2026,Hora Legendaria: Lunala [Shiny Disponible],raid_hour,not_global,61,78,57.93
+EVT0498,20/08/2026,Hora Destacada: Magikarp [Shiny Disponible],spotlight_hour,not_global,43,55,41.57
+EVT0100,21/08/2026,Mejores amigos por siempre click ✨,friendship_friday,not_global,27,47,34.48
+EVT0480,22/08/2026,Súper Mega Incursiones: Mega Starmie [Shiny Disponible],raid_day,not_global,160,178,135.24
+EVT0118,24/08/2026,Lunes Max: HITMONTOP [Shiny Disponible],max_monday,not_global,38,43,32.33
+EVT0388,26/08/2026,Hora Legendaria: REGIS [Shinys Disponibles],raid_hour,not_global,55,62,45.16
+EVT0095,27/08/2026,Hora Destacada: MANKEY [Shiny Disponible],spotlight_hour,not_global,27,35,25.83
+EVT0133,28/08/2026,Amistad es amigo ✨✨✨,friendship_friday,not_global,19,38,28.66
+EVT0376,29/08/2026,Worlds Watch Party - SABADO,social_event,not_global,22,24,17.56
+EVT0465,30/08/2026,Worlds Watch Party - DOMINGO,social_event,not_global,21,24,17.4
+EVT0031,31/08/2026,Megascensión Día 1: Mega-Malamar/Dragonite/Victreebel,otro,not_global,66,72,56.78
+EVT0490,01/09/2026,Megascensión Día 2: Mega-Falinks [Shiny Disponible],otro,not_global,46,53,42.05
+EVT0372,02/09/2026,Megascensión Día 3: Mega-Skarmory [Shiny Disponible],otro,not_global,58,72,57.36
+EVT0313,03/09/2026,Megascensión Día 4: Mega-Starmie [Shiny Disponible],otro,not_global,21,35,28.28
+EVT0444,03/09/2026,Megascensión Día 4: Mega-Starmie [Shiny Disponible],otro,not_global,62,65,52.53
+EVT0013,04/09/2026,Megascensión Día 5: Mega-Raichu X & Y [Shiny Disponible],otro,not_global,57,93,73.26
+EVT0185,05/09/2026,GO FEST 2026: Mega Final - Día 1 [Sábado],go_fest,main_event,336,402,305.38
+EVT0284,06/09/2026,GO FEST 2026: Mega Final - Día 2 [Domingo],go_fest,main_event,301,397,295.05
+EVT0439,07/09/2026,Lunes Max: Ralts [Shiny Disponible],max_monday,not_global,38,47,37.84
+EVT0150,09/09/2026,Hora Legendaria: Zacian [Shiny Disponible],raid_hour,not_global,48,58,43.92
+EVT0340,10/09/2026,"Hora Destacada: Weedle, Kakuna y Beedrill [✨ Disponibles]",spotlight_hour,not_global,34,43,32.6
+EVT0169,11/09/2026,Los shundos son los amigos que hacemos en el camino ✨,friendship_friday,not_global,37,44,32.17
+EVT0014,12/09/2026,Día de la Comunidad Clásico: Gible [Shiny Disponible],community_day_classic,not_global,133,170,124.69
+EVT0069,13/09/2026,"Hora Destacada: Houndour, Houndoom [Shinys Disponibles]",spotlight_hour,not_global,40,62,47.54
+EVT0381,14/09/2026,Lunes Max: Rhyhorn [Shiny Disponible],max_monday,not_global,36,51,39.65
+EVT0215,16/09/2026,Hora Legendaria: Zamazenta [Shiny Disponible],raid_hour,not_global,34,69,52.12
+EVT0510,17/09/2026,Hora Destacada: Charmander [Shiny Disponible],spotlight_hour,not_global,46,57,42.96
+EVT0411,18/09/2026,Calamardo es mi mejor amigo en el muuuuuuuuuuuundoooo 🎻,friendship_friday,not_global,41,50,37.25
+EVT0546,19/09/2026,Súper Mega Incursiones: Mega - Staraptor [Shiny Disponible],raid_day,not_global,130,164,124.27
+EVT0274,21/09/2026,Lunes Max: Aves Legendarias [Shinys Disponibles],max_monday,not_global,57,72,54.9
+EVT0366,23/09/2026,Hora Legendaria: Ultraentes [Shinys Disponibles],raid_hour,not_global,44,65,48.25
+EVT0436,24/09/2026,Hora Destacada: Rattata [Shiny Disponible],spotlight_hour,not_global,24,37,27.97
+EVT0502,25/09/2026,Viernes de amikes ✨,friendship_friday,not_global,33,44,31.89
+EVT0094,26/09/2026,El Arte de la Captura: Phantump [Shiny Disponible],objetivo_captura,not_global,56,68,49.18
+EVT0457,28/09/2026,Lunes Max: Sobble [Shiny Disponible],max_monday,not_global,31,43,32.45
+EVT0383,30/09/2026,Hora Legendaria: Xerneas [Shiny Disponible],raid_hour,not_global,51,75,56.96
+EVT0520,01/10/2026,Hora destacada Seedot,spotlight_hour,not_global,17,23,17.56
+EVT0002,02/10/2026,Viernes con V de Vamos a intercambiar,friendship_friday,not_global,27,31,23.76
+EVT0114,02/10/2026,Viernes con V de Vamos a intercambiar ✨,friendship_friday,not_global,12,16,12.26
+EVT0548,03/10/2026,COMBATES MAX CINDERACE GIGAMAX [Shiny Disponible],max_battle,not_global,121,133,102.39
+EVT0203,05/10/2026,Lunes Max: Sizzlipede [Shiny Disponible],max_monday,not_global,18,35,27.26
+EVT0486,07/10/2026,Hora Legendaria: Yveltal [Shiny Disponible],raid_hour,not_global,15,37,28.2
+EVT0375,08/10/2026,Hora Destacada: Elgyem [Shiny Disponible],spotlight_hour,not_global,16,29,21.62
+EVT0431,09/10/2026,TGIF ✨,friendship_friday,not_global,25,40,29.83
+EVT0249,10/10/2026,Comunnity Day ZORUA [Shiny Disponible],community_day,not_global,84,98,73.8
+EVT0291,12/10/2026,Lunes Max: Rookidee [Shiny Disponible],max_monday,not_global,19,39,29.87
+EVT0435,14/10/2026,Hora Legendaria: Dialga [Shiny Disponible],raid_hour,not_global,30,54,40.19
+EVT0248,15/10/2026,Hora Destacada: Stufful [Shiny Disponible],spotlight_hour,not_global,25,44,33.03
+EVT0219,16/10/2026,Ya-Es-Vieeernes ✨,friendship_friday,not_global,17,33,24.61
+EVT0404,17/10/2026,Hatch Day,hatch_day,not_global,62,69,51.72
+EVT0261,19/10/2026,Lunes Max: Sneasel [Shiny Disponible],max_monday,not_global,19,38,28.62
+EVT0303,21/10/2026,Hora Legendaria: Palkia [Shiny Disponible],raid_hour,not_global,35,58,43.1
+EVT0295,22/10/2026,Hora Destacada: Morelull [Shiny Disponible],spotlight_hour,not_global,23,40,29.69
+EVT0239,23/10/2026,El viernes sin falta ✨,friendship_friday,not_global,26,42,31.01
+EVT0312,24/10/2026,MAX BATTLE  DAY,max_battle,not_global,44,60,43.92
+EVT0055,26/10/2026,Lunes Max: Sableye [Shiny Disponible],max_monday,not_global,23,43,32.31
+EVT0116,28/10/2026,Hora Legendaria: Giratina Forma Origen [Shiny Disponible],raid_hour,not_global,49,75,55.4
+EVT0228,29/10/2026,Hora Destacada: Gastly [Shiny Disponible],spotlight_hour,not_global,27,50,37.44
+EVT0211,30/10/2026,Ya es viernes y la suerte lo sabe ✨,friendship_friday,not_global,21,47,34.8
+EVT0329,31/10/2026,CHANDELURE Super Mega Raid Day,raid_day,not_global,128,151,110.11
+EVT0122,02/11/2026,Lunes Max: Machop [Shiny Disponible],max_monday,not_global,10,15,11.3
+EVT0538,04/11/2026,Hora Legendaria: Giratina [Shiny Disponible],raid_hour,not_global,22,31,23.05
+EVT0017,05/11/2026,Hora Destacada: Teddiursa [Shiny Disponible],spotlight_hour,not_global,19,27,20.37
+EVT0455,06/11/2026,Vi-vi-vi-viernes con suerte ✨,friendship_friday,not_global,14,24,18.15
+EVT0356,09/11/2026,Día 1 Expedición Silvestre: Zacian Espada Suprema ⚔️,wild_area_pre_event,pre_event,48,63,43.31
+EVT0320,10/11/2026,Día 2 Expedición Silvestre: Zamazenta Escudo Supremo 🛡,wild_area_pre_event,pre_event,32,50,37.59

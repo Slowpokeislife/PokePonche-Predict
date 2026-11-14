@@ -1,0 +1,22 @@
+# Entornos, credenciales y datos originales
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.env
+.env.*
+*.log
+catboost_info/
+*.key
+*.pem
+*.p12
+# No publicar las versiones originales
+registros_usuarios_original.csv
+/dataset_maestro_548.csv
+**/*_original.csv
+**/raw/
+**/private/
+# Reproducciones locales (las metricas seleccionadas se guardan en results/)
+resultados_etapa5_rsvp/

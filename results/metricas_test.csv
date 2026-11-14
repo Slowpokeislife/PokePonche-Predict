@@ -1,0 +1,2 @@
+﻿model,n,MAE,RMSE,WAPE_pct,dentro_margen_pct,pequenos_dentro_5_pct,grandes_dentro_15_pct,bias
+conversion,81,6.7495,8.9778,13.651,50.617,52.055,37.5,-0.083

@@ -1,0 +1,549 @@
+﻿event_id,fecha_puebla,tipo_campfire,nombre_campfire,checkins,major_event_type,has_paid_bonus_evidence,has_free_bonus_evidence,has_assumed_free_bonus,has_exclusive_move_section,has_shiny_boost_evidence,has_pokemon_debut_evidence,has_paid_research_evidence,pokemon_label_missing,primary_pokemon_count
+EVT0081,11/11/2023,mega_day,Mega Garchomp,0,other,1,1,0,0,0,1,0,0,1
+EVT0135,25/11/2023,community_day,Comunity day clásico,0,other,0,0,1,1,0,0,1,0,1
+EVT0323,03/12/2023,raid_day,Dia de incursiones de Samurott Hisui,1,other,1,1,0,0,0,1,0,0,1
+EVT0102,09/12/2023,objetivo_captura,Objetivo captura [cryogonal],1,other,0,0,1,0,1,0,1,0,1
+EVT0397,16/12/2023,community_day,1er dia comunity day anual diciembre 2023,1,other,0,0,1,1,0,0,0,1,0
+EVT0260,17/12/2023,community_day,2do dia de comunity day diciembre 2023,4,other,0,0,1,1,0,0,0,1,0
+EVT0385,23/12/2023,raid_day,Dia de incursiones de Wyrdeer,1,other,0,0,0,0,0,1,0,0,1
+EVT0164,06/01/2024,community_day,Comunity day Rowlet,5,other,0,0,1,1,0,0,1,0,1
+EVT0245,14/01/2024,raid_day,Ray day typhlosion,5,other,0,0,1,0,1,1,0,0,1
+EVT0165,20/01/2024,community_day_classic,Comunity day classic [Porygon],2,other,0,0,1,1,0,0,1,0,1
+EVT0137,04/02/2024,community_day,Chansey Comunity Day,2,other,0,0,1,1,0,0,1,0,1
+EVT0462,11/02/2024,raid_day,Raid day decidueye,1,other,1,1,0,0,0,1,0,0,1
+EVT0475,14/02/2024,elite_raids,enamorandunus [enamorus],2,other,0,0,0,0,0,0,0,0,1
+EVT0346,23/02/2024,raid_hour,Hora legendaria Giratina Origen [Gelatina],1,other,0,0,0,0,0,0,0,0,1
+EVT0254,24/02/2024,go_tour,Go Tour Sinnoh [dia 2],2,go_tour,0,0,0,0,1,1,0,1,0
+EVT0492,24/02/2024,go_tour,Go Tour Sinnoh primer dia,1,go_tour,0,0,0,0,1,1,0,1,0
+EVT0049,25/02/2024,go_tour,Go Tour Sinnoh [dia 2],12,go_tour,0,0,0,0,1,1,0,1,0
+EVT0244,16/03/2024,community_day,Litten [Comunity Day],1,other,0,0,1,1,0,0,1,0,1
+EVT0023,17/03/2024,raid_day,Raid Day [kyogre],2,other,1,1,0,0,0,0,0,0,1
+EVT0257,23/03/2024,raid_day,Raid day [groudon],10,other,1,1,0,0,0,0,0,0,1
+EVT0536,30/03/2024,shadow_raid_day,Buscando a Newtwo Oscuro [Poseido] Sabado,5,other,0,0,0,0,0,0,0,0,1
+EVT0430,31/03/2024,shadow_raid_day,Buscando a Newtwo Oscuro [Poseido] Domingo,5,other,0,0,0,0,0,0,0,0,1
+EVT0197,07/04/2024,community_day_classic,Comunity Day Classic [Bagon],8,other,0,0,1,1,0,0,1,0,1
+EVT0208,13/04/2024,mega_raid_day,Dia de Incursiones de Mega Heracross,8,other,0,0,0,0,0,0,0,0,1
+EVT0076,20/04/2024,community_day,Comunity Day Bellsprout,7,other,0,0,1,1,0,0,1,0,1
+EVT0526,23/04/2024,spotlight_hour,Hora destacada de Trubbish,2,other,0,0,1,0,0,0,0,0,1
+EVT0131,19/05/2024,community_day,Comunity Day [Bounsweet],3,other,0,0,1,1,0,0,1,0,1
+EVT0127,14/08/2024,raid_hour,Hora legendaria,0,other,0,0,0,0,0,0,0,0,1
+EVT0466,17/08/2024,raid_day,Maratón  Buscando a Suicine Shiny,13,other,0,0,0,0,0,0,0,0,1
+EVT0361,18/08/2024,community_day_classic,Comunity  Day Of Beldum,20,other,0,0,1,1,0,0,1,0,1
+EVT0120,31/08/2024,community_day,Comunity day Popplio,2,other,0,0,1,1,0,0,1,0,1
+EVT0199,08/09/2024,raid_day,Raid Day the Falinks,24,other,0,0,1,0,0,0,0,0,1
+EVT0395,10/09/2024,spotlight_hour,Hora destacada de Dewpider,8,other,0,0,1,0,0,0,0,0,1
+EVT0259,11/09/2024,raid_hour,Hora Legendaria de Kyogre,9,other,0,0,0,0,0,0,0,0,1
+EVT0529,14/09/2024,community_day,Comunity day Ponyta,31,other,0,0,1,1,0,0,1,0,1
+EVT0432,17/09/2024,spotlight_hour,Hora destacada de Wobbufett,5,other,0,0,1,0,0,0,0,0,1
+EVT0496,18/09/2024,raid_hour,Hora legendaria de Groudon,17,other,0,0,0,0,0,0,0,0,1
+EVT0508,22/09/2024,research_day,Dia de investigacion: Oranguru y Passimian,25,other,0,0,0,0,1,0,1,0,2
+EVT0305,24/09/2024,spotlight_hour,Hora destacada de Machop,12,other,0,0,1,0,0,0,0,0,1
+EVT0066,25/09/2024,raid_hour,Hora legendaria dd Groudon,25,other,0,0,0,0,0,0,0,0,1
+EVT0207,01/10/2024,spotlight_hour,Hora destacada de Pidove,19,other,0,0,1,0,0,0,0,0,1
+EVT0485,02/10/2024,raid_hour,Hora legendaria de Zacian,18,other,0,0,0,0,0,0,0,0,1
+EVT0124,05/10/2024,community_day,Dia de la comunidad de Octubre con Sewaddle 🐛✨️,34,other,0,0,1,1,0,0,0,0,1
+EVT0513,08/10/2024,spotlight_hour,hora destacada de Slowpoke galar,6,other,0,0,0,0,0,0,0,0,1
+EVT0107,09/10/2024,raid_hour,Hora legendaria de Zamazenta [Shiny disponible],28,other,0,0,0,0,0,0,0,0,1
+EVT0426,12/10/2024,raid_day,Dia de incursiones de Mega Mawile [Shiny disponible],28,other,0,0,1,0,1,0,0,0,1
+EVT0448,15/10/2024,spotlight_hour,🚨 Hora Destacada De Shr0omish [Shiny Disponible],14,other,0,0,0,0,0,0,0,0,1
+EVT0253,16/10/2024,raid_hour,🔰 Hora Legendaria de Giratina Origen [Shiny Disponible],23,other,0,0,0,0,0,0,0,0,1
+EVT0429,19/10/2024,research_day,🔎 Dia de Investigaciones de Yamask y Yamask Galar,25,other,0,0,0,0,1,0,1,0,1
+EVT0044,22/10/2024,spotlight_hour,"Hora Destacada de Gastly, Litwick y Duskull.[Shinys activos]",15,other,0,0,0,0,0,0,0,0,3
+EVT0499,23/10/2024,raid_hour,Hora Legendaria de Giratina Origen [Shiny Disponible],24,other,0,0,0,0,0,0,0,0,1
+EVT0225,26/10/2024,max_battle,!Vamos a lo GIGANTE Con Pokémon  Gigamax! SABADO,77,other,0,0,0,0,0,1,0,1,0
+EVT0403,27/10/2024,max_battle,!Vamos a lo GIGANTE con Pokémon Gigamax ! DOMINGO,24,other,0,0,0,0,0,1,0,1,0
+EVT0237,29/10/2024,spotlight_hour,Hora Destacada Froaki y Rowlet con Disfraz [Shiny Activo],16,other,0,0,1,0,0,0,0,0,1
+EVT0521,30/10/2024,raid_hour,Hora legendaria de Darkrai,22,other,0,0,0,0,0,0,0,0,1
+EVT0149,31/10/2024,max_battle,REGISTRO GENGAR GIGAMAX,2,other,0,0,0,0,0,0,0,0,1
+EVT0046,02/11/2024,max_battle,SABADO con GENGAR GIGAMAX  y Dia de MueRtos 2024,73,other,0,0,0,0,0,0,0,0,1
+EVT0441,03/11/2024,otro,Dia de MueRtos en Domingo [Rocket y MEGA GENGAR],16,other,0,0,0,0,0,0,0,0,1
+EVT0113,05/11/2024,spotlight_hour,Hora Destacada de Surskit [Shiny disponible],16,other,0,0,0,0,0,0,0,0,1
+EVT0143,06/11/2024,raid_hour,Hora Legendaria de Lugia [Shiny disponible],37,other,0,0,0,0,0,0,0,0,1
+EVT0052,10/11/2024,community_day,🗓 Comunity Day de Mankey,61,other,0,0,1,1,0,0,1,0,1
+EVT0269,11/11/2024,max_battle,Max Lunes con Charmander DINAMAX,6,other,0,0,0,0,0,0,0,0,1
+EVT0216,12/11/2024,spotlight_hour,Hora destacada de Smoliv [Shiny Disponible],12,other,0,0,0,0,0,0,0,0,1
+EVT0142,13/11/2024,raid_hour,Hora Legendaria de Lugia [Shiny Disponible],23,other,0,0,0,0,0,0,0,0,1
+EVT0258,18/11/2024,max_battle,Max Lunes con Drilbur DINAMAX,8,other,0,0,0,0,0,0,0,0,1
+EVT0080,19/11/2024,raid_hour,Hora Legedaria Nigilego y spl de Combee y Tediursa,23,other,0,0,0,0,0,0,0,0,3
+EVT0348,20/11/2024,raid_hour,Hora Legendaria de Tapu Koko [Shiny Disponible],18,other,0,0,0,0,0,0,0,0,1
+EVT0308,21/11/2024,raid_hour,Hora Legendaria de Dialga Origen [Shiny Disponible],41,other,0,0,0,0,0,0,0,0,1
+EVT0056,22/11/2024,raid_hour,Hora Legendaria de Palkia [Shiny Disponible],43,other,0,0,0,0,0,0,0,0,1
+EVT0063,23/11/2024,otro,Area Silvestre [Evento Global Dia 1] SABADO,101,wild_area,1,0,1,0,1,1,0,1,0
+EVT0241,24/11/2024,otro,Area Silvestre [Evento Global Dia 2],66,wild_area,1,0,1,0,1,1,0,1,0
+EVT0053,25/11/2024,max_monday,Lunes Max con Bulbasaur DINAMAX,7,other,0,0,0,0,0,0,0,0,1
+EVT0524,26/11/2024,spotlight_hour,Hora destacada de Joltik [Shiny disponible],13,other,0,0,0,0,0,0,0,0,1
+EVT0509,27/11/2024,raid_hour,"Hora Legendaria de Zacian, Zamacenta, Regieleki y Regidraco",47,other,0,0,0,0,0,0,0,0,4
+EVT0101,02/12/2024,max_monday,Lunes Max con Squirtle Dinamax,4,other,0,0,0,0,0,0,0,0,1
+EVT0153,03/12/2024,spotlight_hour,Hora Destacada de Sableye [Shiny disponible],21,other,0,0,0,0,0,0,0,0,1
+EVT0446,04/12/2024,raid_hour,Hora Legendaria de Genesect CrioROM [shiny disponible],25,other,0,0,0,0,0,0,0,0,1
+EVT0469,07/12/2024,research_day,Dia de Investigación de Aspirantes a Dragones,16,other,0,0,0,0,0,0,1,1,0
+EVT0051,08/12/2024,max_battle,Dia de combates Max con LAPRAS GIGAMAX,65,other,0,0,0,0,0,1,0,0,1
+EVT0358,09/12/2024,max_monday,Lunes  MAX con Krabby DINAMAX,1,other,0,0,0,0,0,0,0,0,1
+EVT0098,10/12/2024,spotlight_hour,Hora destacada de Murkrow [Shiny disponible],16,other,0,0,0,0,0,0,0,0,1
+EVT0290,11/12/2024,raid_hour,Hora Legendariande Genesect CrioROM [shiny disponible],12,other,0,0,0,0,0,0,0,0,1
+EVT0156,14/12/2024,raid_day,Dia de incursiones con Necrozma,70,other,0,0,1,0,1,0,0,0,1
+EVT0514,16/12/2024,max_battle,Maxi Lunes con CHARMANDER DINAMAX,5,other,0,0,0,0,0,0,0,0,1
+EVT0318,17/12/2024,spotlight_hour,Hora Destacada con SLUGMA y BERGMITE,17,other,0,0,0,0,0,0,0,0,2
+EVT0422,18/12/2024,raid_hour,Hora Legendaria de Mega Latios [Shiny disponible],29,other,0,0,0,0,0,0,0,0,1
+EVT0159,21/12/2024,community_day,Comunity Day diciembre Dia 1:SABADO,48,other,0,0,1,1,0,0,0,1,0
+EVT0405,22/12/2024,community_day,Comunity Day Diciembre Dia 2:Domingo,41,other,0,0,1,1,0,0,0,1,0
+EVT0136,23/12/2024,max_monday,Lunes Max con CRYOGONAL DINAMAX,0,other,0,0,0,0,0,0,0,0,1
+EVT0489,24/12/2024,spotlight_hour,Hora destacada de Delibird,15,other,0,0,0,0,0,0,0,0,1
+EVT0217,25/12/2024,raid_hour,Hora Legendaria de Mega Latias [Shiny disponible],9,other,0,0,0,0,0,0,0,0,1
+EVT0330,29/12/2024,hatch_day,Dia de Eclosiones Brasas cargadas,6,other,0,0,1,0,1,0,0,0,1
+EVT0068,30/12/2024,max_monday,Lunes Max con BULBASAUR DINAMAX,0,other,0,0,0,0,0,0,0,0,1
+EVT0282,31/12/2024,spotlight_hour,Hora destacada de Togetic,14,other,0,0,0,0,0,0,0,0,1
+EVT0467,01/01/2025,raid_hour,Hora legendaria de GIRATINA [Forma alterada],18,other,0,0,0,0,0,0,0,0,1
+EVT0434,05/01/2025,community_day,Comunity  Day SPRINGATITO [enero],35,other,0,0,1,1,0,0,1,0,1
+EVT0302,06/01/2025,max_monday,Lunes Max con MACHOP DINAMAX,1,other,0,0,0,0,0,0,0,0,1
+EVT0010,07/01/2025,spotlight_hour,Hora destacada de VOLTORB y VOLTORB HISUI,18,other,0,0,0,0,0,0,0,0,1
+EVT0170,08/01/2025,raid_hour,Hora Legendaria de Palkia,26,other,0,0,0,0,0,0,0,0,1
+EVT0021,11/01/2025,raid_day,Dia de Incursiones de Mega Gallade,55,other,0,0,1,0,0,0,0,0,1
+EVT0369,13/01/2025,max_monday,Lunes Max con SQUIRTLE DINAMAX,2,other,0,0,0,0,0,0,0,0,1
+EVT0275,14/01/2025,spotlight_hour,Hora destacada de Roselia,11,other,0,0,0,0,0,0,0,0,1
+EVT0380,15/01/2025,raid_hour,Hora legendaria de Palkia,24,other,0,0,0,0,0,0,0,0,1
+EVT0415,19/01/2025,shadow_raid_day,Dia de Incursiones Oscuras,52,other,0,0,0,1,0,0,0,0,1
+EVT0389,20/01/2025,max_monday,Lunes MAX con ARTICUNO DINAMAX,14,other,0,0,0,0,0,0,0,0,1
+EVT0523,21/01/2025,spotlight_hour,Hora destacada de Wooper de Paldea,11,other,0,0,0,0,0,0,0,0,1
+EVT0543,22/01/2025,raid_hour,Hora Legendaria Deoxys [Forma Ataque y Forma defensa],16,other,0,0,0,0,0,0,0,0,1
+EVT0205,25/01/2025,community_day_classic,Dia de la comunidad Clásico Con RALTS,40,other,0,0,1,1,0,0,1,0,1
+EVT0160,25/01/2025,max_monday,Lunes de Vuelo Legendario con ZAPDOS DINAMAX,0,other,0,0,0,0,0,0,0,0,1
+EVT0307,27/01/2025,max_monday,Lunes de Vuelo Legendario ZAPDOS DINAMAX,11,other,0,0,0,0,0,0,0,0,1
+EVT0119,28/01/2025,spotlight_hour,Hora destacada de Yungoos [Shiny disponible],14,other,0,0,0,0,0,0,0,0,1
+EVT0472,29/01/2025,raid_hour,Hora legendaria de Dialga,15,other,0,0,0,0,0,0,0,0,1
+EVT0276,01/02/2025,max_battle,Dia de combates Max KINGLER GIGAMAX,40,other,0,0,0,0,0,1,0,0,1
+EVT0236,03/02/2025,max_monday,Lunes de Vuelo Legendario con MOLTRES DINAMAX,11,other,0,0,0,0,0,0,0,0,1
+EVT0234,04/02/2025,spotlight_hour,Hora destacada de Carvanha,12,other,0,0,0,0,0,0,0,0,1
+EVT0351,05/02/2025,raid_hour,Hora Legendaria de Dialga,19,other,0,0,0,0,0,0,0,0,1
+EVT0089,09/02/2025,community_day,Dia de la Comunidad con Karrablast y Shelmet,65,other,0,0,1,1,0,0,0,0,2
+EVT0310,11/02/2025,spotlight_hour,Hora Destacada de Luvdisc,18,other,0,0,0,0,0,0,0,0,1
+EVT0200,12/02/2025,raid_hour,Hora Legendaria de Enamorus,39,other,0,0,0,0,0,0,0,0,1
+EVT0223,15/02/2025,raid_day,Dia de incursiones de Hoopa Desatado [Febrero],74,other,0,0,1,0,0,0,0,0,1
+EVT0544,18/02/2025,spotlight_hour,Hora Destacada de Inkay,12,other,0,0,0,0,0,0,0,0,1
+EVT0517,19/02/2025,raid_hour,Hora legendaria de Xerneas Yvelta,22,other,0,0,0,0,0,0,0,0,2
+EVT0162,24/02/2025,raid_hour,Hora Legendaria de Genesect [Todas las formas],19,other,0,0,0,0,0,0,0,0,1
+EVT0033,25/02/2025,raid_hour,"Raid Hour Terrakion, Cobalion y Virizion e Iniciales Unova",26,other,0,0,0,0,0,0,0,0,6
+EVT0532,26/02/2025,raid_hour,"Raid Hour Landorus, Thundurus y Tornadus [formas Tótem]",28,other,0,0,0,0,0,0,0,0,3
+EVT0024,27/02/2025,raid_hour,Hora Lengendaria Reshiram,34,other,0,0,0,0,0,0,0,0,1
+EVT0267,28/02/2025,raid_hour,Hora legendaria Zecrom,30,other,0,0,0,0,0,0,0,0,1
+EVT0184,01/03/2025,go_tour,Tour de Pokemon Go : UNOVA [SABADO],123,go_tour,0,0,0,0,0,0,0,1,0
+EVT0386,02/03/2025,go_tour,Tour de Pokemon Go: UNOVA [DOMINGO],73,go_tour,0,0,0,0,0,0,0,1,0
+EVT0382,04/03/2025,spotlight_hour,Horal destacada de Makuhita,9,other,0,0,0,0,0,0,0,0,1
+EVT0349,05/03/2025,raid_hour,hora legendaria con Aves legendarias,24,other,0,0,0,0,0,0,0,0,3
+EVT0096,08/03/2025,community_day,Dia de la comunidad con Fuecoco [Marzo],68,other,0,0,1,1,1,0,0,0,1
+EVT0373,11/03/2025,spotlight_hour,Hora Destacada de Roselia,12,other,0,0,0,0,0,0,0,0,1
+EVT0132,12/03/2025,raid_hour,hora legendaria con las Aves Legendarias,34,other,0,0,0,0,0,0,0,0,3
+EVT0263,15/03/2025,max_battle,RAIKU DINAMAX SABADO,51,other,0,0,0,0,0,1,0,0,1
+EVT0085,16/03/2025,max_battle,Raiku dinamax y Arte de la captura Archen DOMINGO,49,other,0,0,0,0,0,1,0,0,2
+EVT0332,17/03/2025,max_monday,Lunes MAX con CHANSEY DINAMAX,8,other,0,0,0,0,0,0,0,0,1
+EVT0047,18/03/2025,spotlight_hour,Hora Destacada Con Shellder [Shiny Disponible],24,other,0,0,0,0,0,0,0,0,1
+EVT0402,19/03/2025,raid_hour,hora legendaria con Tapu Koko,21,other,0,0,0,0,0,0,0,0,1
+EVT0171,22/03/2025,community_day,Dia de la comunidad con Totodile,54,other,0,0,1,1,0,0,1,0,1
+EVT0288,23/03/2025,raid_day,Día de incursiones de Absol,29,other,0,0,1,1,1,0,0,0,1
+EVT0281,24/03/2025,max_monday,Lunes MAX con CATERPIE DINAMAX,11,other,0,0,0,0,0,0,0,0,1
+EVT0447,25/03/2025,spotlight_hour,Hora Destacada de Cutiefly,12,other,0,0,0,0,0,0,0,0,1
+EVT0060,26/03/2025,raid_hour,Hora legendaria con Heatran 🔥,23,other,0,0,0,0,0,0,0,0,1
+EVT0123,29/03/2025,research_day,Dia de Investigacion de Compañeros de Peluche 🧸,34,other,0,0,0,0,0,0,1,1,0
+EVT0317,30/03/2025,social_event,Fiesta de Cebos cortesia de Campfire,5,other,0,0,0,0,0,0,0,1,0
+EVT0342,31/03/2025,max_monday,Lunes Max con scorbunny,15,other,0,0,0,0,0,0,0,0,1
+EVT0497,01/04/2025,spotlight_hour,Hora Destacada del Dia de las Bromas [1 de abril],10,other,0,0,0,0,0,0,0,1,0
+EVT0151,02/04/2025,raid_hour,Hora legendaria de Tapu Lele,41,other,0,0,0,0,0,0,0,0,1
+EVT0460,05/04/2025,raid_day,MEGA AUDINO [DEBUT] SHINY DISPONIBLE,59,other,0,0,1,0,1,1,0,0,1
+EVT0540,06/04/2025,hatch_day,Dia de Eclosiones  con TYROGUE [SHINY DISPONIBLE],18,other,0,0,1,0,0,0,1,0,1
+EVT0196,07/04/2025,max_monday,Lunes MAX con PASSIMIAN DINAMAX [SHINY DISPONIBLE],14,other,0,0,0,0,0,0,0,0,1
+EVT0483,08/04/2025,spotlight_hour,Hora destacada de MEDITITE [SHINY DISPONIBLE],16,other,0,0,0,0,0,0,0,0,1
+EVT0343,09/04/2025,raid_hour,Hora legendaria de Blacephalon,49,other,0,0,0,0,0,0,0,0,2
+EVT0519,13/04/2025,raid_day,Sparring Parthers Dia de incursiones,32,other,0,0,0,0,0,0,0,1,0
+EVT0187,14/04/2025,max_monday,Lunes Max con WOOLOO DINAMAX,13,other,0,0,0,0,0,0,0,0,1
+EVT0438,15/04/2025,spotlight_hour,Hora Destacada de FOMANTIS [Shiny disponible],15,other,0,0,0,0,0,0,0,0,1
+EVT0037,16/04/2025,raid_hour,Hora legendaria de Blacephalon y Stakataka,26,other,0,0,0,0,0,0,0,0,2
+EVT0087,19/04/2025,max_battle,SNORLAX GIGAMAX Debut [Shiny Disponible],75,other,0,0,0,0,0,1,0,0,1
+EVT0533,21/04/2025,max_monday,Lunex Max con SOBBLE DINAMAX,16,other,0,0,0,0,0,0,0,0,1
+EVT0503,22/04/2025,spotlight_hour,Hora destacada de MORELULL [SHINY DISPONIBLE],21,other,0,0,0,0,0,0,0,0,1
+EVT0390,23/04/2025,raid_hour,Hora legendaria Cresselia,20,other,0,0,0,0,0,0,0,0,1
+EVT0190,26/04/2025,max_battle,Batallas MAX con ENTEI DINAMAX [SABADO],48,other,0,0,0,0,0,1,0,0,1
+EVT0293,27/04/2025,max_battle,Comunity abril,10,other,0,0,0,0,0,1,0,0,1
+EVT0377,27/04/2025,community_day,Comunity de Abril con Vanillite 🍦con ENTEI DINAMAX,46,other,0,0,1,1,0,0,1,0,1
+EVT0507,28/04/2025,max_monday,Lunes Dinamax con FALINKS DINAMAX [SHINY DISPONIBLE],14,other,0,0,0,0,0,0,0,0,1
+EVT0374,29/04/2025,spotlight_hour,Hora Destacada de ABRA [SHINY DISPONIBLE],15,other,0,0,0,0,0,0,0,0,1
+EVT0071,30/04/2025,raid_hour,Hora legendaria de Cresselia,31,other,0,0,0,0,0,0,0,0,1
+EVT0057,03/05/2025,raid_day,Raid day de Mega Kangaskang [Shiny disponible],45,other,0,0,1,0,1,0,0,0,1
+EVT0535,05/05/2025,max_monday,lunex Max con Grookey DINAMAX,16,other,0,0,0,0,0,0,0,0,1
+EVT0039,06/05/2025,spotlight_hour,Hora Destacada con FURFROU [SHINY DISPONIBLE],10,other,0,0,0,0,0,0,0,0,1
+EVT0206,07/05/2025,raid_hour,Hora legendaria de TAPU FINI [Shiny disponible],34,other,0,0,0,0,0,0,0,0,1
+EVT0147,10/05/2025,max_battle,SUICUNE DINAMAX [SABADO],38,other,0,0,0,0,0,1,0,0,1
+EVT0289,11/05/2025,max_battle,SUICUNE DINAMAX [DOMINGO],59,other,0,0,0,0,0,1,0,0,1
+EVT0347,11/05/2025,community_day,Comunity de Pawmi,44,other,0,0,1,1,0,0,1,0,1
+EVT0494,12/05/2025,max_monday,Lunes Max con GASTLY DINAMAX [SHINY DISPONIBLE],19,other,0,0,0,0,0,0,0,0,1
+EVT0238,13/05/2025,spotlight_hour,⏰ Hora destacada de SANDYGAST [SHINY DISPONIBLE],20,other,0,0,0,0,0,0,0,0,1
+EVT0333,14/05/2025,raid_hour,Hora legendaria de AZELF [SHINY DISPONIBLE],37,other,0,0,0,0,0,0,0,0,3
+EVT0086,17/05/2025,shadow_raid_day,🔰 Dia de incursiones REGIGIGAS OSCURO [SHINY DISPONIBLE],77,other,0,0,1,0,1,0,0,0,1
+EVT0368,19/05/2025,max_monday,Lunes Max con SABLEYE DINAMAX [Shiny Disponible],23,other,0,0,0,0,0,0,0,0,1
+EVT0345,20/05/2025,spotlight_hour,🕰 Hora Destacada de POOCHYENA [Shiny disponible],19,other,0,0,0,0,0,0,0,0,1
+EVT0240,21/05/2025,raid_hour,Hora legendaria de AZELF [Shiny disponible],26,other,0,0,0,0,0,0,0,0,3
+EVT0032,24/05/2025,community_day_classic,Comunity clasico Mayo - MACHOP [shiny disponible]2025,72,other,0,0,1,1,0,0,0,0,1
+EVT0073,25/05/2025,max_battle,💪 MACHAMP GIGAMAX - DEBUT [Shiny disponible],131,other,0,0,1,0,0,1,0,0,1
+EVT0500,26/05/2025,max_monday,Lunes Max con ROOKIDEE DINAMAX,13,other,0,0,0,0,0,0,0,0,1
+EVT0004,27/05/2025,spotlight_hour,Hora Destacada de GOLETT [Shiny disponible],16,other,0,0,0,0,0,0,0,0,1
+EVT0058,28/05/2025,raid_hour,Hora legendaria de TAPU BULU [Shiny Disponible],30,other,0,0,0,0,0,0,0,0,1
+EVT0251,31/05/2025,max_battle,🍃🥁 RILLABOOM GIGAMAX EN SABADO [Debut],56,other,0,0,1,0,1,1,1,0,1
+EVT0091,01/06/2025,max_battle,🍃🥁 RILLABOOM GIGAMAX EN DOMINGO [Debut],62,other,0,0,1,0,1,1,1,0,1
+EVT0474,02/06/2025,max_monday,💥Lunes Max con CHANSEY DINAMAX [Shiny disponible],19,other,0,0,0,0,0,0,0,0,1
+EVT0505,03/06/2025,spotlight_hour,Hora destacada de SPRITZEE [Shiny Disponible],18,other,0,0,0,0,0,0,0,0,1
+EVT0353,04/06/2025,raid_hour,Hora Legendaria de TAPU BULU [Shiny Disponible],33,other,0,0,0,0,0,0,0,0,1
+EVT0418,07/06/2025,max_battle,CINDERACE GIGAMAX EN SABADO [Debut],71,other,0,0,1,0,1,1,1,0,1
+EVT0034,08/06/2025,max_battle,CINDERACE GIGAMAX EN DOMINGO [DEBUT],74,other,0,0,1,0,1,1,1,0,1
+EVT0515,09/06/2025,max_monday,Lunes Max con MACHOP DINAMAX [Shiny disponible],15,other,0,0,0,0,0,0,0,0,1
+EVT0453,10/06/2025,spotlight_hour,Hora Destacada de MAGNEMITE [Shiny disponible],14,other,0,0,0,0,0,0,0,0,1
+EVT0304,11/06/2025,raid_hour,Hora Legendaria con GROUDON [Shiny disponible],40,other,0,0,0,0,0,0,0,0,1
+EVT0541,14/06/2025,max_battle,INTELEON GIGAMAX en Sabado [Debut],57,other,1,0,1,0,1,1,1,0,1
+EVT0442,15/06/2025,max_battle,inteleon Gigamax en Domingo,39,other,1,0,1,0,1,1,1,0,1
+EVT0262,16/06/2025,max_monday,Lunes Max con HATENNA DINAMAX [Shiny no disponible],14,other,0,0,0,0,0,0,0,0,1
+EVT0283,17/06/2025,spotlight_hour,Hora destacada de SOLOSIS [Shiny Disponible],14,other,0,0,0,0,0,0,0,0,1
+EVT0487,18/06/2025,raid_hour,Hora legendaria con KYOGRE [Shiny Disponible],24,other,0,0,0,0,0,0,0,0,1
+EVT0384,21/06/2025,community_day,Comunity Day Jangmo-O [Shiny Disponible],86,other,0,0,1,1,1,0,0,0,1
+EVT0110,23/06/2025,raid_hour,Hora legendaria REGISTEEL REGIROCK Y REGICE,30,other,0,0,0,0,0,0,0,0,3
+EVT0495,23/06/2025,max_monday,Lunes Max con CATERPIE DINAMAX,11,other,0,0,0,0,0,0,0,0,1
+EVT0511,24/06/2025,spotlight_hour,Hora Destacada de GROWLITHE [Shiny Disponible],7,other,0,0,0,0,0,0,0,0,1
+EVT0357,24/06/2025,raid_hour,Hora de Incursiones de REGILEKI,48,other,0,0,0,0,0,0,0,0,1
+EVT0231,25/06/2025,raid_hour,Hora de Incursiones de REGIDRAGO [Shiny Disponible],46,other,0,0,0,0,0,0,0,0,1
+EVT0045,26/06/2025,raid_hour,Hora Lengendaria de REGIGIGAS [Shiny disponible],49,other,0,0,0,0,0,0,0,0,1
+EVT0103,27/06/2025,raid_hour,Hora Legendaria Con Todos Los Regis,36,other,0,0,0,0,0,0,0,0,6
+EVT0322,28/06/2025,go_fest,GO FEST 2025 EN SABADO,163,go_fest,0,0,1,0,0,1,0,1,0
+EVT0115,29/06/2025,go_fest,GO FEST 2025 EN DOMINGO,152,go_fest,0,0,1,0,0,1,0,1,0
+EVT0019,30/06/2025,max_monday,💥SHUKLE DINAMAX en Lunes MAX,12,other,0,0,0,0,0,0,0,0,1
+EVT0128,01/07/2025,spotlight_hour,Hora Destacada de PIKACHU [con gorro de fiesta],17,other,0,0,0,0,0,0,0,0,1
+EVT0527,02/07/2025,raid_hour,Hora legendaria de Cobalion,26,other,0,0,0,0,0,0,0,0,1
+EVT0104,05/07/2025,social_event,Cebos Dorados en PP2 en Parque de Santa Ines,5,other,0,0,0,0,0,0,0,1,0
+EVT0074,05/07/2025,community_day,Comunity Clásico Eevee en SABADO,57,other,0,0,1,1,0,0,0,0,1
+EVT0481,06/07/2025,community_day,Cominity day Clásico EEVEE en Domingo,40,other,0,0,1,1,0,0,0,0,1
+EVT0176,07/07/2025,max_monday,Lunes Max con GASTLY DINAMAX,11,other,0,0,0,0,0,0,0,0,1
+EVT0088,08/07/2025,spotlight_hour,Hora Legendaria VOLTORB Y VOLTORB HISUI [Shiny Disponible],18,other,0,0,0,0,0,0,0,0,1
+EVT0419,09/07/2025,raid_hour,Hora legendaria de SOLGALEO,70,other,0,0,0,0,0,0,0,0,1
+EVT0079,12/07/2025,raid_day,Dia de incursiones con Lilligant de Hisui,59,other,0,0,1,0,0,1,0,0,1
+EVT0188,14/07/2025,max_monday,Lunes MAX de WAILMER [Shiny Disponible],8,other,0,0,0,0,0,0,0,0,1
+EVT0099,15/07/2025,spotlight_hour,Hora destacada de FEEBAS [Shiny Disponible],17,other,0,0,0,0,0,0,0,0,1
+EVT0247,16/07/2025,raid_hour,🛡 Hora Legendaria de TERRAKION [Shiny Disponible],29,other,0,0,0,0,0,0,0,0,1
+EVT0268,19/07/2025,max_battle,Dia de LAPRAS GIGAMAX  [Shiny Disponible],70,other,0,0,1,0,0,0,0,0,1
+EVT0077,20/07/2025,community_day,Comunity Day de QUAXLY,62,other,0,0,1,1,0,0,1,0,1
+EVT0226,21/07/2025,max_monday,Hora Dinamax de DARUMAKA [Shiny Disponible],9,other,0,0,0,0,0,0,0,0,1
+EVT0050,22/07/2025,spotlight_hour,Hora Destacada de JIGGLYPUFF [Shiny Disponible],15,other,0,0,0,0,0,0,0,0,1
+EVT0433,23/07/2025,raid_hour,Hora Legendaria de  LUNALA,41,other,0,0,0,0,0,0,0,0,1
+EVT0394,26/07/2025,max_battle,Combates Max con LATIOS Y LATIAS DINAMAX en Sabado,51,other,0,0,0,0,0,0,0,0,2
+EVT0134,26/07/2025,max_battle,Combates Max con LATIOS Y LATIAS DINAMAX en Sabado,61,other,0,0,0,0,0,0,0,0,2
+EVT0423,27/07/2025,max_battle,Combates Max de LATIOS Y LATIOS en Domingo,62,other,0,0,0,0,0,0,0,0,1
+EVT0338,28/07/2025,max_monday,Lunes Max con KABUTO DINAMAX,31,other,0,0,0,0,0,0,0,0,1
+EVT0424,29/07/2025,spotlight_hour,Hora Destacada de ROGGENROLA [Shiny Disponible],15,other,0,0,0,0,0,0,0,0,1
+EVT0204,30/07/2025,raid_hour,Hora Legendaria de VIRIZION,34,other,0,0,0,0,0,0,0,0,1
+EVT0181,02/08/2025,research_day,Dia de Investigaciones de fosiles,41,other,0,0,0,0,1,0,1,0,2
+EVT0009,03/08/2025,max_battle,GIGAMAX BUTTERFREE [DEBUT],132,other,0,0,1,0,0,0,0,0,1
+EVT0445,04/08/2025,max_monday,Hora Dinamax de OMANYTE [Shiny Disponible],15,other,0,0,0,0,0,0,0,0,1
+EVT0371,05/08/2025,spotlight_hour,Hora Destacada de SWIRLIX [Shiny Disponible],19,other,0,0,0,0,0,0,0,0,1
+EVT0461,06/08/2025,raid_hour,Hora Legendaria de LUGIA [Shiny disponible],53,other,0,0,0,0,0,0,0,0,1
+EVT0078,09/08/2025,hatch_day,Dia de Eclosiones con MUCHLAX [Shiny disponible],43,other,0,0,1,0,0,0,0,0,1
+EVT0309,10/08/2025,raid_day,✨ Ultra Unlock Origin Raid Day PALKIA Y DIALGA ✨,143,other,0,0,1,1,0,0,0,0,2
+EVT0109,11/08/2025,max_monday,Hora Dinamax TRUBBISH [Shiny Disponible],18,other,0,0,0,0,0,0,0,0,1
+EVT0003,12/08/2025,spotlight_hour,⚡ Hora Destacada: PLUSLE & MINUN [Shiny Disponible]⚡,19,other,0,0,0,0,0,0,0,0,2
+EVT0324,13/08/2025,raid_hour,Hora Legendaria de Ho-Oh [Shiny disponible],66,other,0,0,0,0,0,0,0,0,1
+EVT0140,16/08/2025,shadow_raid_day,Dia de Incursiones con KYOGRE [Shiny Disponible]-SABADO,58,other,0,0,0,0,0,0,0,0,1
+EVT0539,17/08/2025,shadow_raid_day,Dia de incursiones con KYOGRE [Shiny Disponible] - DOMINGO,62,other,0,0,0,0,0,0,0,0,1
+EVT0210,18/08/2025,max_battle,DIAS OSCUROS: LATIOS Y LATIOS DINAMAX [Shiny Disponible],43,other,0,0,1,0,0,0,0,0,1
+EVT0202,19/08/2025,spotlight_hour,Hora Destacada: RALTS [Shiny Disponible],32,other,0,0,0,0,0,0,0,0,1
+EVT0326,19/08/2025,otro,Camino al final Max DIA 2 AVES LEGENDARIAS,54,other,0,0,0,0,0,0,0,1,0
+EVT0218,20/08/2025,otro,CIELOS OSCUROS: AVES LEGENDARIAS [Shiny Disponible],55,other,0,0,0,0,0,0,0,1,0
+EVT0180,21/08/2025,otro,CIELOS OSCUROS: PERRITOS LEGENDARIOS [Shiny Disponible],46,other,0,0,0,0,0,0,0,1,0
+EVT0477,21/08/2025,raid_hour,Zacian Espada Suprema 21 Agosto,23,other,0,0,0,0,0,0,0,0,1
+EVT0412,22/08/2025,otro,Dia 5 camino al MAX FINAL : PERRITOS LEGENDARIOS,42,other,0,0,0,0,0,0,0,1,0
+EVT0468,22/08/2025,raid_hour,Zamacenta Escudo Supremo 22 de Agosto,10,other,0,0,0,0,0,0,0,0,1
+EVT0273,23/08/2025,go_fest,Clausura Max GO FEST 2025 [SABADO],189,go_fest,0,0,1,0,0,1,0,1,0
+EVT0530,24/08/2025,go_fest,Clausura Max GO FEST 2025 [Domingo],155,go_fest,0,0,1,0,0,1,0,1,0
+EVT0246,25/08/2025,max_monday,Hora DINAMAX: CHANSEY [Shiny Disponible],26,other,0,0,0,0,0,0,0,0,1
+EVT0020,26/08/2025,spotlight_hour,Hora Destacada: LECHONK [Shiny Disponible],18,other,0,0,0,0,0,0,0,0,1
+EVT0364,27/08/2025,raid_hour,Hora de incursiones con Necrozma [Shiny Disponible],68,other,0,0,0,0,0,0,0,0,1
+EVT0157,30/08/2025,community_day,Cominity Day ROOKIDEE,89,other,0,0,1,1,0,0,1,0,1
+EVT0314,31/08/2025,raid_day,Dia de incursiones con MEGA GYARADOS [Shiny disponible],92,other,0,0,1,1,1,0,0,0,1
+EVT0232,01/09/2025,max_monday,Hora Dinamax de PIDOVE [Shiny Disponible],21,other,0,0,0,0,0,0,0,0,1
+EVT0454,02/09/2025,spotlight_hour,Hora Destacada de Pidgey [SHINY DISPONIBLE✨️],12,other,0,0,0,0,0,0,0,0,1
+EVT0227,03/09/2025,raid_hour,Hora legendaria Palkia Forma Origen [SHINY DISPONIBLE],32,other,0,0,0,0,0,0,0,0,1
+EVT0456,07/09/2025,raid_day,Día de incursiones Mega Sharpedo [Shiny disponible]✨️,104,other,0,0,1,0,1,1,0,0,1
+EVT0501,08/09/2025,max_monday,Hora Dinamax de TRUBBISH [Shiny Disponible],18,other,0,0,0,0,0,0,0,0,1
+EVT0256,09/09/2025,spotlight_hour,Hora Destacada de Trubbish [SHINY DISPONIBLE ✨️],29,other,0,0,0,0,0,0,0,0,1
+EVT0252,10/09/2025,raid_hour,Hora legendaria Palkia Forma Origen [SHINY DISPONIBLE ✨️],43,other,0,0,0,0,0,0,0,0,1
+EVT0130,14/09/2025,community_day,Día de la Comunidad Septiembre: FLABEBÉ,86,other,0,0,1,1,1,0,0,0,1
+EVT0336,15/09/2025,max_monday,Lunes Dinamax de ABRA [Shiny Disponible],18,other,0,0,0,0,0,0,0,0,1
+EVT0084,16/09/2025,spotlight_hour,Hora Destacada de GOTHITA [Shiny Disponible],24,other,0,0,0,0,0,0,0,0,1
+EVT0093,17/09/2025,raid_hour,Hora Legendaria de MEGA LATIOS & MEGA-LATIAS,59,other,0,0,0,0,0,0,0,0,2
+EVT0198,20/09/2025,raid_day,Incursiones oscuras de GROUDON [Shiny Disponible],104,other,1,0,0,0,0,0,0,0,1
+EVT0547,21/09/2025,raid_day,Incursiones Oscuras: GROUDON [Shiny Disponible],85,other,1,0,0,0,0,0,0,0,1
+EVT0195,22/09/2025,max_monday,Lunes Max con CHANSEY DINAMAX [Shiny Disponible],25,other,0,0,0,0,0,0,0,0,1
+EVT0001,23/09/2025,spotlight_hour,Hora Destacada de HOOTHOOT [Shiny Disponible],24,other,0,0,0,0,0,0,0,0,1
+EVT0280,24/09/2025,raid_hour,Incursiones Legendarias: DIALGA [Shiny Disponible],46,other,0,0,0,0,0,0,0,0,1
+EVT0482,28/09/2025,raid_day,MEGA CAMERUPT RAID DAY,56,other,0,0,1,0,1,1,0,0,1
+EVT0090,29/09/2025,max_monday,Lunes Dinamax BELDUM [Shiny Disponible ✨️],5,other,0,0,0,0,0,0,0,0,1
+EVT0531,30/09/2025,spotlight_hour,Hora Destacada de ARON [Shiny Disponible],20,other,0,0,0,0,0,0,0,0,1
+EVT0138,01/10/2025,raid_hour,Hora Legendaria de DIALGA (FORMA ORIGEN) [Shiny Disponible],34,other,0,0,0,0,0,0,0,0,1
+EVT0041,04/10/2025,raid_day,Dia de Megaincursiones con MEGA METAGROSS [Shiny Disponible],167,other,0,0,1,1,1,1,0,0,1
+EVT0379,06/10/2025,max_monday,Lunes Max con DRILBUR DINAMAX [Shiny Disponible],12,other,0,0,0,0,0,0,0,0,1
+EVT0011,07/10/2025,spotlight_hour,Hora Destacada de FERROSEED [Shiny Disponible],16,other,0,0,0,0,0,0,0,0,1
+EVT0061,08/10/2025,raid_hour,Hora Legendaria DEOXYS NORMAL Y DEFENSA [Shiny Disponible],35,other,0,0,0,0,0,0,0,0,1
+EVT0154,12/10/2025,community_day,Día de la Comunidad Octubre: SOLOSIS [Shiny Disponible],91,other,0,0,1,1,1,0,0,0,1
+EVT0365,13/10/2025,max_monday,Lunes Max con BOWNSWEET DINAMAX [Shiny Disponible],22,other,0,0,0,0,0,0,0,0,1
+EVT0407,14/10/2025,spotlight_hour,Hora Destacada de PETILIL,20,other,0,0,0,0,0,0,0,0,1
+EVT0545,15/10/2025,raid_hour,Hora Legendaria de DEOXYS [ATAQUE & VELOCIDAD],34,other,0,0,0,0,0,0,0,0,1
+EVT0148,18/10/2025,raid_day,Mega Raid Day con RAYQUAZA [Shiny Disponible],248,other,0,0,1,0,1,0,0,0,1
+EVT0265,20/10/2025,max_monday,Lunes Max con GASTLY DINAMAX [Shiny disponible],25,other,0,0,0,0,0,0,0,0,1
+EVT0230,21/10/2025,spotlight_hour,Hora Destacada de GASTLY [Shiny Disponible],25,other,0,0,0,0,0,0,0,0,1
+EVT0285,22/10/2025,raid_hour,Hora Legendaria con GENESECT [Shiny disponible],35,other,0,0,0,0,0,0,0,0,1
+EVT0030,25/10/2025,otro,Dia de Combates Go en SABADO,19,other,0,0,0,0,0,0,0,1,0
+EVT0319,26/10/2025,otro,Dia de Combates Go [DOMINGO],11,other,0,0,0,0,0,0,0,1,0
+EVT0191,27/10/2025,max_monday,Lunex Max Con WOOBAT DINAMAX [Shiny disponible],23,other,0,0,0,0,0,0,0,0,1
+EVT0266,28/10/2025,spotlight_hour,Hora Destacada de SINISTEA [Shiny Disponible],38,other,0,0,0,0,0,0,0,0,1
+EVT0117,29/10/2025,raid_hour,Hora Legendaria de GIRATINA ORIGEN [Shiny Disponible],39,other,0,0,0,0,0,0,0,0,1
+EVT0175,01/11/2025,max_battle,GARBODOR GIGAMAX - DEBUT [Shiny disponible],98,other,0,0,1,0,0,1,0,0,1
+EVT0064,03/11/2025,max_monday,Lunes Max con INKAY DINAMAX [Shiny disponible],29,other,0,0,0,0,0,0,0,0,1
+EVT0105,04/11/2025,spotlight_hour,Hora Destacada con WEEDLE [Shiny Disponible],27,other,0,0,0,0,0,0,0,0,1
+EVT0451,05/11/2025,raid_hour,"Hora Legendaria con SUICUNE, ENTEI Y RAIKU ✨️",39,other,0,0,0,0,0,0,0,0,3
+EVT0425,10/11/2025,max_monday,Lunes Max con RALTS DINAMAX [Shiny disponible],31,other,0,0,0,0,0,0,0,0,1
+EVT0139,10/11/2025,raid_hour,Hora Legendaria de HO-OH y LUGIA oscuro,55,other,0,0,0,0,0,0,0,0,2
+EVT0059,11/11/2025,spotlight_hour,Hora Destacada de MURELULL,23,other,0,0,0,0,0,0,0,0,1
+EVT0393,11/11/2025,raid_hour,Hora Legendaria de TAPU KOKO Y TAPU LELE,40,other,0,0,0,0,0,0,0,0,2
+EVT0512,12/11/2025,raid_hour,Hora Legendaria de NECROZMA MELENA CREPUSCULAR✨️,69,other,0,0,0,0,0,0,0,0,1
+EVT0344,13/11/2025,raid_hour,Hora Legendaria Con TAPU FINI y TAPU BULU✨️,35,other,0,0,0,0,0,0,0,0,2
+EVT0399,14/11/2025,raid_hour,Hora de Incursiones con NECROZMA ALAS DEL ALBA✨️,59,other,0,0,0,0,0,0,0,0,1
+EVT0427,15/11/2025,otro,AREA SILVESTRE 2025 [Sabado],137,wild_area,0,0,1,0,0,1,0,1,0
+EVT0194,16/11/2025,otro,AREA SILVESTRE 2025 [Domingo],154,wild_area,0,0,1,0,0,1,0,1,0
+EVT0179,17/11/2025,max_monday,Lunes Max con TOXTRICITY [Shiny Disponible],25,other,0,0,0,0,0,0,0,0,1
+EVT0294,18/11/2025,spotlight_hour,Hora Destacada de SABLEYE [Shiny Disponible],29,other,0,0,0,0,0,0,0,0,1
+EVT0363,19/11/2025,raid_hour,Hora Legendaria de HEATRAN [Shiny Disponible],42,other,0,0,0,0,0,0,0,0,1
+EVT0193,21/11/2025,max_battle,Dia 1 con Batallax Max - EEVEE DINAMAX DEBUT [viernes 21],51,other,0,0,0,0,0,1,0,0,1
+EVT0401,22/11/2025,max_battle,Dia 2 con Batallax Max - EEVEE DINAMAX DEBUT [sabado 22],65,other,0,0,0,0,0,1,0,0,1
+EVT0392,23/11/2025,max_battle,Dia 3 con Batallax Max - EEVEE DINAMAX DEBUT [domingo 23],51,other,0,0,0,0,0,1,0,0,1
+EVT0443,24/11/2025,max_battle,Dia 1 con Batallax Max - EEVEE DINAMAX DEBUT [lunes 24],31,other,0,0,0,0,0,1,0,0,1
+EVT0167,24/11/2025,max_monday,Lunes Max con EEVEEE DINAMAX [Shiny disponible],24,other,0,0,0,0,0,0,0,0,1
+EVT0177,25/11/2025,spotlight_hour,Hora Destacada de Scraggy [Shiny Disponible],28,other,0,0,0,0,0,0,0,0,1
+EVT0413,26/11/2025,raid_hour,"Hora Legendaria COBALION,TERRAKION Y VIRIZION✨️",45,other,0,0,0,0,0,0,0,0,3
+EVT0028,29/11/2025,max_battle,Fin de semana con LUGIA DINAMAX [Shiny Disponible]- SABADO,116,other,0,0,0,0,0,1,0,0,1
+EVT0297,30/11/2025,community_day,Dia de la Comunidad con PIKIPEK [Shiny Disponible],60,other,0,0,1,1,1,0,0,0,1
+EVT0112,30/11/2025,max_battle,Fin de semana con LUGIA DINAMAX [Shiny Disponible] - DOMINGO,98,other,0,0,0,0,0,1,0,0,1
+EVT0414,01/12/2025,max_monday,Lunes Max con DARUMAKA Dinamax [Shiny Disponible],27,other,0,0,0,0,0,0,0,0,1
+EVT0537,02/12/2025,spotlight_hour,Hora Destacada de CRANIDOS [Shiny Disponible],27,other,0,0,0,0,0,0,0,0,1
+EVT0458,03/12/2025,raid_hour,Hora Legendaria COBALION TERRAKION VIRIZION [✨️],23,other,0,0,0,0,0,0,0,0,3
+EVT0025,06/12/2025,community_day,Día de la Comunidad 2025 [SÁBADO],72,other,0,0,1,1,0,0,1,1,0
+EVT0542,07/12/2025,community_day,Día de la Comunidad 2025 [DOMINGO],73,other,0,0,1,1,0,0,1,1,0
+EVT0108,08/12/2025,max_monday,Lunes Max con CRYOGONAL DINAMAX [Shiny Disponible],27,other,0,0,0,0,0,0,0,0,1
+EVT0121,09/12/2025,spotlight_hour,Hora Destacada de SHIELDON [Shiny Disponible],29,other,0,0,0,0,0,0,0,0,1
+EVT0420,10/12/2025,raid_hour,Hora Legendaria de KYUREM [Shiny Disponible],50,other,0,0,0,0,0,0,0,0,1
+EVT0471,14/12/2025,max_battle,Dia de Batallas Max SNORLAX GIGAMAX [Shiny Disponible],120,other,0,0,1,0,0,0,0,0,1
+EVT0478,15/12/2025,max_monday,Lunes Max con KABUTO DINAMAX [Shiny Disponible],33,other,0,0,0,0,0,0,0,0,1
+EVT0018,16/12/2025,spotlight_hour,Hora Destacada de MIENFOO [Shiny Disponible],19,other,0,0,0,0,0,0,0,0,1
+EVT0360,17/12/2025,raid_hour,Hora Legendaria de RESHIRAM [Shiny Disponible],46,other,0,0,0,0,0,0,0,0,1
+EVT0213,20/12/2025,research_day,Dia de Investigacion LUNATONE y SOLROCK [Shiny Disponible],40,other,0,0,0,0,1,0,1,0,2
+EVT0067,22/12/2025,max_monday,Lunes Max con SPHEAL DINAMAX [Shiny Disponible],24,other,0,0,0,0,0,0,0,0,1
+EVT0437,23/12/2025,spotlight_hour,Hora Destacada de SPHEAL [Shiny Disponible],21,other,0,0,0,0,0,0,0,0,1
+EVT0287,24/12/2025,raid_hour,Hora Legendaria con ZEKROM [Shiny Disponible],21,other,0,0,0,0,0,0,0,0,1
+EVT0183,29/12/2025,max_monday,Hora Dinamax de OMANYTE [Shiny Disponible],28,other,0,0,0,0,0,0,0,0,1
+EVT0174,30/12/2025,spotlight_hour,Hora Destacada de DELIBIRD [Shiny Disponible],19,other,0,0,0,0,0,0,0,0,1
+EVT0038,31/12/2025,raid_hour,Hora Legendaria de BLACEPHALON [Shiny Disponible],28,other,0,0,0,0,0,0,0,0,1
+EVT0083,04/01/2026,community_day_classic,Primer Community Day Classic del año: PIPLUP,57,other,0,0,1,1,0,0,0,0,1
+EVT0279,05/01/2026,max_monday,Lunes Max con DRAMPA DINAMAX [Shiny Disponible],26,other,0,0,0,0,0,0,0,0,1
+EVT0152,06/01/2026,spotlight_hour,Hora destacada de BARBOACH,15,other,0,0,0,0,0,0,0,0,1
+EVT0327,07/01/2026,raid_hour,Hora Legendaria de GENESECT [Shiny Disponible],26,other,0,0,0,0,0,0,0,0,1
+EVT0479,10/01/2026,raid_day,Dia de Incursiones de Fusiones de KYUREM [Shiny Disponible],137,other,0,0,1,1,1,0,0,0,1
+EVT0075,12/01/2026,max_monday,Lunes Max con CATERPIE DINAMAX [Shiny Disponible],33,other,0,0,0,0,0,0,0,0,1
+EVT0158,13/01/2026,spotlight_hour,Hora Destacada de MAREEP [Shiny Disponible],24,other,0,0,0,0,0,0,0,0,1
+EVT0129,14/01/2026,raid_hour,Hora Legendaria de GENESECT [Shiny Disponible],29,other,0,0,0,0,0,0,0,0,1
+EVT0036,18/01/2026,community_day,Dia de la Comunidad con GROOKEY [Shiny Disponible],98,other,0,0,1,1,1,0,0,0,1
+EVT0306,19/01/2026,max_monday,Lunex Max con BELDUM Dinamax [Shiny disponible],26,other,0,0,0,0,0,0,0,0,1
+EVT0400,20/01/2026,spotlight_hour,Hora destacada de HATENNA [Shiny Disponible],25,other,0,0,0,0,0,0,0,0,1
+EVT0518,21/01/2026,raid_hour,Hora Lengendaria con THUNDURUS avatar [Shiny Disponible],17,other,0,0,0,0,0,0,0,0,1
+EVT0352,24/01/2026,shadow_raid_day,Dia de incursiones Oscuras con RAIKU [Shiny disponible],77,other,0,0,1,0,1,0,0,0,1
+EVT0221,26/01/2026,max_monday,Lunes Max con ROGGENROLA Dinamax  [Shiny Disponible],32,other,0,0,0,0,0,0,0,0,1
+EVT0146,27/01/2026,spotlight_hour,Hora Destacada de FOONGUS [Shiny Disponible],31,other,0,0,0,0,0,0,0,0,1
+EVT0428,28/01/2026,raid_hour,Hora Legendaria TORNADUS Avatar [Shiny Disponible],38,other,0,0,0,0,0,0,0,0,1
+EVT0476,31/01/2026,raid_day,Día de Incursiones Dinamax HO-OH [shiny disponible] SABADO,75,other,0,0,0,0,0,1,0,0,1
+EVT0125,01/02/2026,raid_day,Día de Incursiones Dinamax HO-OH [Shiny Disponible] DOMINGO,93,other,0,0,0,0,0,1,0,0,1
+EVT0016,01/02/2026,community_day,Día de la Comunidad de VULPIX,76,other,0,0,1,1,1,0,0,0,1
+EVT0473,02/02/2026,max_monday,Lunes Max con WAILMER Dinamax [Shiny Disponible],17,other,0,0,0,0,0,0,0,0,1
+EVT0299,03/02/2026,spotlight_hour,Hora Destacada de WHISMUR [Shiny Disponible],19,other,0,0,0,0,0,0,0,0,1
+EVT0145,04/02/2026,raid_hour,Hora legendaria PALKIA Y DIALGA [Shiny disponible],32,other,0,0,0,0,0,0,0,0,2
+EVT0459,07/02/2026,objetivo_captura,Objetivo Captura con ORICORIO [Shiny disponible],29,other,0,0,1,0,0,0,1,0,1
+EVT0416,09/02/2026,max_monday,Lunes Max con GROWLITHE Dinamax [Shiny Disponible],27,other,0,0,0,0,0,0,0,0,1
+EVT0186,10/02/2026,spotlight_hour,Hora Destacada de MUNNA [Shiny Disponible],21,other,0,0,0,0,0,0,0,0,1
+EVT0464,11/02/2026,raid_hour,Hora Legendaria PALKIA Y DIALGA [Shiny Disponible],45,other,0,0,0,0,0,0,0,0,2
+EVT0012,14/02/2026,raid_day,Dia de incursiones ENAMORUS forma Totem,94,other,0,0,1,0,1,1,0,0,1
+EVT0222,15/02/2026,max_battle,MEOWTH GIGAMAX [DEBUT] - Shiny Disponible,119,other,0,0,1,0,0,1,0,0,1
+EVT0522,16/02/2026,max_monday,Lunes Max MACHOP DINAMAX [Shiny Disponible],20,other,0,0,0,0,0,0,0,0,1
+EVT0491,17/02/2026,spotlight_hour,Hora Destacada de HORSEA [Shiny Disponible],21,other,0,0,0,0,0,0,0,0,1
+EVT0126,18/02/2026,raid_hour,Hora Legendaria de SOLGALEO,46,other,0,0,0,0,0,0,0,0,1
+EVT0270,23/02/2026,raid_hour,"Hora legendaria con ARTICUNO,ZAPDOS Y MOLTRES [✨️]",54,other,0,0,0,0,0,0,0,0,3
+EVT0141,23/02/2026,max_monday,Lunex Max: CHANSEY DINAMAX [Shiny Disponible],35,other,0,0,0,0,0,0,0,0,1
+EVT0450,24/02/2026,raid_hour,Incursiones de HO-OH y LUGIA OSCUROS [✨],60,other,0,0,0,0,0,0,0,0,2
+EVT0331,24/02/2026,spotlight_hour,Hora Destacada de TOTODILE [Shiny Disponible],24,other,0,0,0,0,0,0,0,0,1
+EVT0316,25/02/2026,raid_hour,Incursiones de KYOGRE y GROUDON primigenios [✨],90,other,0,0,0,0,0,0,0,0,2
+EVT0192,26/02/2026,raid_hour,Incursiones de PALKIA y DIALGA Forma Origen [✨🦕],72,other,0,0,0,0,0,0,0,0,2
+EVT0035,27/02/2026,raid_hour,"Incursiones de KUYREM, RESHIRAM y ZEKROM [✨]",89,other,0,0,0,0,0,0,0,0,3
+EVT0350,28/02/2026,go_tour,GO TOUR KALOS Zocalo PUEBLA [SABADO],207,go_tour,0,0,0,0,0,0,0,1,0
+EVT0315,01/03/2026,go_tour,GO TOUR KALOS Zocalo PUEBLA [DOMINGO],210,go_tour,0,0,0,0,0,0,0,1,0
+EVT0506,02/03/2026,max_monday,Lunes Max con ROOKIDEE [Shiny Disponible],23,other,0,0,0,0,0,0,0,0,1
+EVT0042,04/03/2026,raid_hour,"Hora legendaria ARTICUNO,ZAPDOS Y MOLTRES [Shiny disponible]",26,other,0,0,0,0,0,0,0,0,3
+EVT0235,07/03/2026,otro,Celebración 30 Aniversario Pokemon [SABADO],83,other,0,0,0,0,0,0,0,1,0
+EVT0337,08/03/2026,otro,Celebración 30 Aniversario Pokemon [DOMINGO],18,other,0,0,0,0,0,0,0,1,0
+EVT0264,09/03/2026,max_monday,Lunex Max con PIKACHU DINAMAX [Shiny Disponible],23,other,0,0,0,0,0,0,0,0,1
+EVT0311,11/03/2026,raid_hour,Hora legendaria de ZACIAN [Shiny Disponible],39,other,0,0,0,0,0,0,0,0,1
+EVT0065,14/03/2026,community_day,Dia de la comunidad con SCORBUNNY [Shiny Disponible],114,other,0,0,1,1,1,0,0,0,1
+EVT0298,16/03/2026,max_monday,Lunes Max con FALINKS DINAMAX [Shiny Disponible],18,other,0,0,0,0,0,0,0,0,1
+EVT0528,18/03/2026,raid_hour,Hora Legendaria de ZAMAZENTA [✨],35,other,0,0,0,0,0,0,0,0,1
+EVT0189,21/03/2026,research_day,Dia de Investigaciones Acuaticas [SABADO 21],41,other,0,0,0,0,0,0,1,1,0
+EVT0255,23/03/2026,max_monday,Lunes Max con REGICE DINAMAX [Shiny Disponible],33,other,0,0,0,0,0,0,0,0,1
+EVT0212,25/03/2026,raid_hour,Hora Legendaria de Regieleki [SHINY DISPONIBLE ✨️],50,other,0,0,0,0,0,0,0,0,1
+EVT0027,28/03/2026,max_battle,PIKACHU GIGAMAX [Shiny Disponible] - DEBUT,148,other,0,0,1,0,0,1,0,0,1
+EVT0172,30/03/2026,max_monday,Lunes Max con WOOBAT DINAMAX [Shiny Disponible],29,other,0,0,0,0,0,0,0,0,1
+EVT0488,31/03/2026,spotlight_hour,Hora Destacada MAREEP [Shiny Disponible],22,other,0,0,1,0,1,1,0,0,1
+EVT0504,01/04/2026,raid_hour,Hora Legendaria con REGIDRACO [Shiny Disponible],31,other,0,0,0,0,0,0,0,0,1
+EVT0072,01/04/2026,spotlight_hour,Hora Destacada Con PIKACHU [Shiny Disponible],28,other,0,0,1,0,1,1,0,0,1
+EVT0396,02/04/2026,spotlight_hour,Hora Destacada de MAGNAMITE [Shiny Disponible],15,other,0,0,1,0,1,1,0,0,1
+EVT0391,03/04/2026,spotlight_hour,Hora Destacada CHINCHOU [Shiny Disponible],16,other,0,0,1,0,1,1,0,0,1
+EVT0525,04/04/2026,raid_day,FASHION RAID DAY [SABADO 4 DE ABRIL],57,other,0,1,0,0,0,0,0,1,0
+EVT0062,06/04/2026,spotlight_hour,Hora Destacada JOLTIK [Shiny Disponible],11,other,0,0,1,0,1,1,0,0,1
+EVT0008,06/04/2026,max_monday,Lunex Max con TRAPINCH [Shiny Disponible],27,other,0,0,0,0,0,0,0,0,1
+EVT0410,08/04/2026,raid_hour,Hora Legendaria KYOGRE [Shiny Disponible],44,other,0,0,0,0,0,0,0,0,1
+EVT0144,11/04/2026,community_day,Comunity Day TINKATINK,120,other,0,0,1,1,1,0,0,0,1
+EVT0166,13/04/2026,max_monday,Lunes Max con DRlLBUR DINAMAX [Shiny Disponible],24,other,0,0,0,0,0,0,0,0,1
+EVT0484,15/04/2026,raid_hour,Hora Legendaria GROUDON [Shiny Disponible],48,other,0,0,0,0,0,0,0,0,1
+EVT0224,18/04/2026,hatch_day,Dia de Eclosiones RIOLU [Shiny Disponible],80,other,1,0,1,0,1,0,0,0,1
+EVT0286,20/04/2026,max_monday,Lunes Max REGIROCK DINAMAX [Shiny Disponible],39,other,0,0,0,0,0,0,0,0,1
+EVT0334,22/04/2026,raid_hour,Hora Legendaria de TAPU KOKO [Shiny Disponible],33,other,0,0,0,0,0,0,0,0,1
+EVT0272,25/04/2026,max_battle,Dia de COMBATES MAX [25 de Abril],176,other,1,0,0,0,0,0,0,1,0
+EVT0452,27/04/2026,max_monday,Lunes Max SHUCKLE DINAMAX [Shiny Disponible],22,other,0,0,0,0,0,0,0,0,1
+EVT0214,29/04/2026,raid_hour,Hora Legendaria TAPU LELE [Shiny Disponible],49,other,0,0,0,0,0,0,0,0,1
+EVT0406,02/05/2026,shadow_raid_day,Dia de Incursiones Oscuras ENTEI [Shiny Disponible],130,other,0,0,1,0,1,0,0,0,1
+EVT0043,04/05/2026,max_monday,Lunes de combates MAX de COTTONEE [Shiny Disponible],39,other,0,0,0,0,0,0,0,0,1
+EVT0301,06/05/2026,raid_hour,Hora Legendaria de NIHILEGO [Shiny Disponible],43,other,0,0,0,0,0,0,0,0,1
+EVT0082,09/05/2026,community_day,Día de la Comunidad de LECHONK [Shiniiiiiy],78,other,0,0,1,1,1,0,0,0,1
+EVT0378,11/05/2026,max_monday,Lunes Max GROWLITHE DINAMAX [Shiny Disponible],36,other,0,0,0,0,0,0,0,0,1
+EVT0163,13/05/2026,raid_hour,Hora Legendaria BUZZWOLE [Shiny Disponible],37,other,0,0,0,0,0,0,0,0,3
+EVT0408,16/05/2026,community_day_classic,Community Day Classic DEINO,122,other,0,0,1,1,0,0,0,0,1
+EVT0111,18/05/2026,max_monday,Lunes Dinamax de REGISTEEL :0 [Shiny Disponible ✨],26,other,0,0,0,0,0,0,0,0,1
+EVT0209,20/05/2026,raid_hour,Hora Legendaria TAPU BULU [Shiny Disponible],33,other,0,0,0,0,0,0,0,0,1
+EVT0022,23/05/2026,raid_day,Super Mega Raid day FALINKS [Shiny Disponible],204,other,0,0,1,0,1,1,0,0,1
+EVT0534,25/05/2026,max_monday,Lunes Dinamax de COMBEE [Shiny Disponible ✨],38,other,0,0,0,0,0,0,0,0,1
+EVT0070,27/05/2026,raid_hour,Hora Legendaria de TAPU FINI [Shiny Disponible ✨],28,other,0,0,0,0,0,0,0,0,1
+EVT0409,01/06/2026,max_monday,INKAY Lunes Max [Shiny Disponible],28,other,0,0,0,0,0,0,0,0,1
+EVT0168,03/06/2026,raid_hour,Hora Legendaria de RESHIRAM [✨],42,other,0,0,0,0,0,0,0,0,1
+EVT0335,05/06/2026,friendship_friday,VIERNES DE AMIGOOOOOSSS ✨,14,other,0,0,0,0,0,0,0,1,0
+EVT0161,08/06/2026,max_monday,Lunes Max ELECTABUZZ DINAMAX [Shiny Disponible],23,other,0,0,0,0,0,0,0,0,1
+EVT0097,10/06/2026,raid_hour,Hora Legendaria de ZEKROM [Shiny Disponible],40,other,0,0,0,0,0,0,0,0,1
+EVT0040,12/06/2026,friendship_friday,VIERNES DE AMIGAZOSS,15,other,0,0,0,0,0,0,0,1,0
+EVT0278,15/06/2026,max_monday,Lunes Max de ROGGENROLA [Shiny Disponible],26,other,0,0,0,0,0,0,0,0,1
+EVT0387,17/06/2026,raid_hour,Hora legendaria de NECROZMA [Shiny Disponible ✨],23,other,0,0,0,0,0,0,0,0,1
+EVT0155,18/06/2026,spotlight_hour,Hora destacada de Swinub [Shiny Disponible ✨],23,other,0,0,0,0,0,0,0,0,1
+EVT0328,19/06/2026,friendship_friday,Viernes entre Amigos,15,other,0,0,0,0,0,0,0,1,0
+EVT0243,20/06/2026,community_day,Comunnity Day Frigibax,135,other,0,0,1,1,1,0,0,0,1
+EVT0220,22/06/2026,max_monday,Lunes Max HOOTHOOT DINAMAX [Shiny Disponible],24,other,0,0,0,0,0,0,0,0,1
+EVT0006,24/06/2026,raid_hour,Incursiones de CELESTEELA & KARTANA [Shiny Disponible],40,other,0,0,0,0,0,0,0,0,2
+EVT0370,25/06/2026,spotlight_hour,Hora Destacada de WINGULL,15,other,0,0,1,0,0,0,0,0,1
+EVT0015,26/06/2026,friendship_friday,Los amigos son amigos 🫶,20,other,0,0,0,0,0,0,0,1,0
+EVT0106,27/06/2026,raid_day,Mega Raid Day SKARMORY,181,other,0,0,1,0,1,1,0,0,1
+EVT0026,29/06/2026,max_monday,Lunes MAX de PIDOVE [Shiny Disponible],16,other,0,0,0,0,0,0,0,0,1
+EVT0470,01/07/2026,raid_hour,Hora de las Aves legendarias de KANTO,22,other,0,0,0,0,0,0,0,0,3
+EVT0440,02/07/2026,spotlight_hour,Hora destacada PIDGEY [Shiny Disponible],16,other,0,0,0,0,0,0,0,0,1
+EVT0417,03/07/2026,friendship_friday,Viernes entre Amigos 🥳,4,other,0,0,0,0,0,0,0,1,0
+EVT0354,04/07/2026,community_day,Comunity Day SOBBLE,96,other,0,0,1,1,1,0,0,0,1
+EVT0242,06/07/2026,raid_hour,Día Lunes: SENDERO DE LEYENDAS ✨,88,other,0,0,1,0,0,0,0,1,0
+EVT0449,07/07/2026,raid_hour,Día Martes: SENDERO DE LEYENDAS ✨,47,other,0,0,1,0,0,0,0,1,0
+EVT0341,08/07/2026,raid_hour,Día Miércoles: SENDERO DE LEYENDAS ✨,55,other,0,0,1,0,0,0,0,1,0
+EVT0233,09/07/2026,raid_hour,Día Jueves: SENDERO DE LEYENDAS ✨,94,other,0,0,1,0,0,0,0,1,0
+EVT0054,10/07/2026,raid_hour,Dia Viernes: SENDERO DE LEYENDAS ✨,82,other,0,0,1,0,0,0,0,1,0
+EVT0296,11/07/2026,go_fest,GO FEST SABADO 11 JULIO,647,go_fest,0,0,1,0,0,1,0,1,0
+EVT0229,13/07/2026,max_monday,Lunes MAX con deino [Shiny Disponible],26,other,0,0,0,0,0,0,0,0,1
+EVT0092,15/07/2026,raid_hour,Hora de incursiones con Kyogre [Shiny Disponible],40,other,0,0,0,0,0,0,0,0,1
+EVT0048,16/07/2026,spotlight_hour,Hora del Pokémon destacado Zubat [Shiny Disponible],22,other,0,0,0,0,0,0,0,0,1
+EVT0201,17/07/2026,friendship_friday,Viernes entre Amigos 🙌,19,other,0,0,0,0,0,0,0,1,0
+EVT0007,18/07/2026,raid_day,Súper Mega Incursiones RAICHU X & Y [Shiny Disponible],158,other,0,0,1,0,1,1,0,0,1
+EVT0359,20/07/2026,max_monday,Lunes Dinamax de TRUBBISH [✨],20,other,0,0,0,0,0,0,0,0,1
+EVT0339,22/07/2026,raid_hour,Hora Legendaria de SOLGALEO [Por fin shinyyyy],56,other,0,0,0,0,0,0,0,0,1
+EVT0173,23/07/2026,spotlight_hour,Hora Destacada de EEVE [shiny disponible ✨],29,other,0,0,0,0,0,0,0,0,1
+EVT0367,24/07/2026,friendship_friday,"Somos amigos, somos amigos",21,other,0,0,0,0,0,0,0,1,0
+EVT0325,26/07/2026,go_fest,GO FEST ESPECIAL [DOMINGO 26 DE JULIO],190,go_fest,0,0,0,0,0,0,0,1,0
+EVT0321,27/07/2026,max_monday,MAXI LUNES FEEBAS,19,other,0,0,0,0,0,0,0,0,1
+EVT0277,29/07/2026,raid_hour,Hora Legendaria de KYUREM [✨],46,other,0,0,0,0,0,0,0,0,1
+EVT0398,30/07/2026,spotlight_hour,HORA DESTACADA BIDOOF,18,other,0,0,0,0,0,0,0,0,1
+EVT0005,31/07/2026,friendship_friday,Yo Soy Tu Amigo Fiel ✨️🌟,16,other,0,0,0,0,0,0,0,1,0
+EVT0029,01/08/2026,max_battle,RILLABOOM GIGAMAX [Shiny Disponible],180,other,0,0,1,0,0,0,0,0,1
+EVT0421,03/08/2026,max_monday,Lunes max: Magmar [Shiny Disponible],24,other,0,0,0,0,0,0,0,0,1
+EVT0300,05/08/2026,raid_hour,Hora de incursiones: Trío del lago [Shinys Disponibles],41,other,0,0,0,0,0,0,0,0,3
+EVT0292,06/08/2026,spotlight_hour,Hora destacada: Delibird [Shiny Disponible],32,other,0,0,0,0,0,0,0,0,1
+EVT0493,07/08/2026,friendship_friday,Los amigos son amigos para siempre y por siempre ✨,10,other,0,0,0,0,0,0,0,1,0
+EVT0362,08/08/2026,hatch_day,Día de eclosiones: Fuego y hielo [Shinys Disponibles ],55,other,0,0,1,0,0,0,0,0,1
+EVT0271,10/08/2026,max_monday,Lunes Max BELDUM [Shiny Disponible],31,other,0,0,0,0,0,0,0,0,1
+EVT0516,12/08/2026,raid_hour,Hora Legendaria GROUDON [Shiny Disponible],38,other,0,0,0,0,0,0,0,0,1
+EVT0178,13/08/2026,spotlight_hour,Hora Destacada de Wurmple,14,other,0,0,0,0,0,0,0,0,1
+EVT0355,14/08/2026,friendship_friday,Viernes entre AMIGOS 🙌,18,other,0,0,0,0,0,0,0,1,0
+EVT0463,16/08/2026,community_day,Comunnity day NICKIT,76,other,0,0,1,1,1,0,0,0,1
+EVT0250,17/08/2026,max_monday,Lunes Max: Magikarp [Shiny Disponible],45,other,0,0,0,0,0,0,0,0,1
+EVT0182,19/08/2026,raid_hour,Hora Legendaria: Lunala [Shiny Disponible],61,other,0,0,0,0,0,0,0,0,1
+EVT0498,20/08/2026,spotlight_hour,Hora Destacada: Magikarp [Shiny Disponible],43,other,0,0,0,0,0,0,0,0,1
+EVT0100,21/08/2026,friendship_friday,Mejores amigos por siempre click ✨,27,other,0,0,0,0,0,0,0,1,0
+EVT0480,22/08/2026,raid_day,Súper Mega Incursiones: Mega Starmie [Shiny Disponible],160,other,0,0,1,0,1,1,0,0,1
+EVT0118,24/08/2026,max_monday,Lunes Max: HITMONTOP [Shiny Disponible],38,other,0,0,0,0,0,0,0,0,1
+EVT0388,26/08/2026,raid_hour,Hora Legendaria: REGIS [Shinys Disponibles],55,other,0,0,0,0,0,0,0,0,3
+EVT0095,27/08/2026,spotlight_hour,Hora Destacada: MANKEY [Shiny Disponible],27,other,0,0,0,0,0,0,0,0,1
+EVT0133,28/08/2026,friendship_friday,Amistad es amigo ✨✨✨,19,other,0,0,0,0,0,0,0,1,0
+EVT0376,29/08/2026,social_event,Worlds Watch Party - SABADO,22,other,0,0,0,0,0,0,0,1,0
+EVT0465,30/08/2026,social_event,Worlds Watch Party - DOMINGO,21,other,0,0,0,0,0,0,0,1,0
+EVT0031,31/08/2026,otro,Megascensión Día 1: Mega-Malamar/Dragonite/Victreebel,66,other,0,0,0,0,0,0,0,0,3
+EVT0490,01/09/2026,otro,Megascensión Día 2: Mega-Falinks [Shiny Disponible],46,other,0,0,0,0,0,0,0,0,1
+EVT0372,02/09/2026,otro,Megascensión Día 3: Mega-Skarmory [Shiny Disponible],58,other,0,0,0,0,0,0,0,0,1
+EVT0444,03/09/2026,otro,Megascensión Día 4: Mega-Starmie [Shiny Disponible],62,other,0,0,0,0,0,0,0,0,1
+EVT0313,03/09/2026,otro,Megascensión Día 4: Mega-Starmie [Shiny Disponible],21,other,0,0,0,0,0,0,0,0,1
+EVT0013,04/09/2026,otro,Megascensión Día 5: Mega-Raichu X & Y [Shiny Disponible],57,other,0,0,0,0,0,0,0,0,1
+EVT0185,05/09/2026,go_fest,GO FEST 2026: Mega Final - Día 1 [Sábado],336,go_fest,0,0,0,0,0,0,0,1,0
+EVT0284,06/09/2026,go_fest,GO FEST 2026: Mega Final - Día 2 [Domingo],301,go_fest,0,0,0,0,0,0,0,1,0
+EVT0439,07/09/2026,max_monday,Lunes Max: Ralts [Shiny Disponible],38,other,0,0,0,0,0,0,0,0,1
+EVT0150,09/09/2026,raid_hour,Hora Legendaria: Zacian [Shiny Disponible],48,other,0,0,0,0,0,0,0,0,1
+EVT0340,10/09/2026,spotlight_hour,"Hora Destacada: Weedle, Kakuna y Beedrill [✨ Disponibles]",34,other,0,0,0,0,0,0,0,0,3
+EVT0169,11/09/2026,friendship_friday,Los shundos son los amigos que hacemos en el camino ✨,37,other,0,0,0,0,0,0,0,1,0
+EVT0014,12/09/2026,community_day_classic,Día de la Comunidad Clásico: Gible [Shiny Disponible],133,other,0,0,1,1,0,0,0,0,1
+EVT0069,13/09/2026,spotlight_hour,"Hora Destacada: Houndour, Houndoom [Shinys Disponibles]",40,other,0,0,0,0,0,0,0,0,2
+EVT0381,14/09/2026,max_monday,Lunes Max: Rhyhorn [Shiny Disponible],36,other,0,0,0,0,0,0,0,0,1
+EVT0215,16/09/2026,raid_hour,Hora Legendaria: Zamazenta [Shiny Disponible],34,other,0,0,0,0,0,0,0,0,1
+EVT0510,17/09/2026,spotlight_hour,Hora Destacada: Charmander [Shiny Disponible],46,other,0,0,1,0,0,0,0,0,1
+EVT0411,18/09/2026,friendship_friday,Calamardo es mi mejor amigo en el muuuuuuuuuuuundoooo 🎻,41,other,0,0,0,0,0,0,0,1,0
+EVT0546,19/09/2026,raid_day,Súper Mega Incursiones: Mega - Staraptor [Shiny Disponible],130,other,0,0,1,0,1,1,0,0,1
+EVT0274,21/09/2026,max_monday,Lunes Max: Aves Legendarias [Shinys Disponibles],57,other,0,0,0,0,0,0,0,0,3
+EVT0366,23/09/2026,raid_hour,Hora Legendaria: Ultraentes [Shinys Disponibles],44,other,0,0,0,0,0,0,0,0,3
+EVT0436,24/09/2026,spotlight_hour,Hora Destacada: Rattata [Shiny Disponible],24,other,0,0,0,0,0,0,0,0,1
+EVT0502,25/09/2026,friendship_friday,Viernes de amikes ✨,33,other,0,0,0,0,0,0,0,1,0
+EVT0094,26/09/2026,objetivo_captura,El Arte de la Captura: Phantump [Shiny Disponible],56,other,0,0,1,0,0,0,1,0,1
+EVT0457,28/09/2026,max_monday,Lunes Max: Sobble [Shiny Disponible],31,other,0,0,0,0,0,0,0,0,1
+EVT0383,30/09/2026,raid_hour,Hora Legendaria: Xerneas [Shiny Disponible],51,other,0,0,0,0,0,0,0,0,1
+EVT0520,01/10/2026,spotlight_hour,Hora destacada Seedot,17,other,0,0,0,0,0,0,0,0,1
+EVT0002,02/10/2026,friendship_friday,Viernes con V de Vamos a intercambiar,27,other,0,0,0,0,0,0,0,1,0
+EVT0114,02/10/2026,friendship_friday,Viernes con V de Vamos a intercambiar ✨,12,other,0,0,0,0,0,0,0,1,0
+EVT0548,03/10/2026,max_battle,COMBATES MAX CINDERACE GIGAMAX [Shiny Disponible],121,other,0,0,1,0,0,0,1,0,1
+EVT0203,05/10/2026,max_monday,Lunes Max: Sizzlipede [Shiny Disponible],18,other,0,0,0,0,0,0,0,0,1
+EVT0486,07/10/2026,raid_hour,Hora Legendaria: Yveltal [Shiny Disponible],15,other,0,0,0,0,0,0,0,0,1
+EVT0375,08/10/2026,spotlight_hour,Hora Destacada: Elgyem [Shiny Disponible],16,other,0,0,0,0,0,0,0,0,1
+EVT0431,09/10/2026,friendship_friday,TGIF ✨,25,other,0,0,0,0,0,0,0,1,0
+EVT0249,10/10/2026,community_day,Comunnity Day ZORUA [Shiny Disponible],84,other,0,0,1,1,1,0,0,0,1
+EVT0291,12/10/2026,max_monday,Lunes Max: Rookidee [Shiny Disponible],19,other,0,0,0,0,0,0,0,0,1
+EVT0435,14/10/2026,raid_hour,Hora Legendaria: Dialga [Shiny Disponible],30,other,0,0,0,0,0,0,0,0,1
+EVT0248,15/10/2026,spotlight_hour,Hora Destacada: Stufful [Shiny Disponible],25,other,0,0,0,0,0,0,0,0,1
+EVT0219,16/10/2026,friendship_friday,Ya-Es-Vieeernes ✨,17,other,0,0,0,0,0,0,0,1,0
+EVT0404,17/10/2026,hatch_day,Hatch Day,62,other,1,0,1,0,0,0,1,0,1
+EVT0261,19/10/2026,max_monday,Lunes Max: Sneasel [Shiny Disponible],19,other,0,0,0,0,0,0,0,0,1
+EVT0303,21/10/2026,raid_hour,Hora Legendaria: Palkia [Shiny Disponible],35,other,0,0,0,0,0,0,0,0,1
+EVT0295,22/10/2026,spotlight_hour,Hora Destacada: Morelull [Shiny Disponible],23,other,0,0,0,0,0,0,0,0,1
+EVT0239,23/10/2026,friendship_friday,El viernes sin falta ✨,26,other,0,0,0,0,0,0,0,1,0
+EVT0312,24/10/2026,max_battle,MAX BATTLE  DAY,44,other,0,0,1,0,0,1,0,0,3
+EVT0055,26/10/2026,max_monday,Lunes Max: Sableye [Shiny Disponible],23,other,0,0,0,0,0,0,0,0,1
+EVT0116,28/10/2026,raid_hour,Hora Legendaria: Giratina Forma Origen [Shiny Disponible],49,other,0,0,0,0,0,0,0,0,1
+EVT0228,29/10/2026,spotlight_hour,Hora Destacada: Gastly [Shiny Disponible],27,other,0,0,0,0,0,0,0,0,1
+EVT0211,30/10/2026,friendship_friday,Ya es viernes y la suerte lo sabe ✨,21,other,0,0,0,0,0,0,0,1,0
+EVT0329,31/10/2026,raid_day,CHANDELURE Super Mega Raid Day,128,other,0,0,1,0,1,1,0,0,1
+EVT0122,02/11/2026,max_monday,Lunes Max: Machop [Shiny Disponible],10,other,0,0,0,0,0,0,0,0,1
+EVT0538,04/11/2026,raid_hour,Hora Legendaria: Giratina [Shiny Disponible],22,other,0,0,0,0,0,0,0,0,1
+EVT0017,05/11/2026,spotlight_hour,Hora Destacada: Teddiursa [Shiny Disponible],19,other,0,0,0,0,0,0,0,0,1
+EVT0455,06/11/2026,friendship_friday,Vi-vi-vi-viernes con suerte ✨,14,other,0,0,0,0,0,0,0,1,0
+EVT0356,09/11/2026,otro,Día 1 Expedición Silvestre: Zacian Espada Suprema ⚔️,48,other,0,0,1,1,0,0,0,0,1
+EVT0320,10/11/2026,otro,Día 2 Expedición Silvestre: Zamazenta Escudo Supremo 🛡,32,other,0,0,1,1,0,0,0,0,1
