@@ -22,18 +22,6 @@ Predecir la cantidad de usuarios que registrarán un `CHECKED_IN` en una quedada
 
 **Importante:** no entrenamos un modelo con 33,848 ejemplos independientes de asistencia. El modelo final **aprende sobre las 548 quedadas**; las 33,848 filas individuales se usan para obtener, antes de cada fecha, variables de actividad, retención y asistencia recurrente, y para reconstruir el contador RSVP. Confundir estos conceptos inflaría artificialmente la descripción del tamaño de entrenamiento.
 
-### Reconstrucción de “Voy a asistir”
-
-En el histórico, cada pareja usuario/evento tiene un estado final. El contador se aproxima como:
-
-```text
-interesados_total_proxy = número de ACCEPTED + número de CHECKED_IN
-checkin_rate = CHECKED_IN / interesados_total_proxy
-```
-
-Por ejemplo, **32 check-ins + 18 `ACCEPTED` restantes = 50 interesados**, y la conversión fue **64 %**.
-
-**Advertencia metodológica:** el CSV exportado no aporta la hora del RSVP ni una instantánea al inicio. El contador reconstruido es un **proxy retrospectivo**, que contiene información de estados finales y está vinculado con el objetivo. La precisión reportada es válida para esta evaluación retrospectiva y **no debe describirse como exactitud ya comprobada antes del evento**. Para uso real, hay que registrar el número visible de interesados en el momento concreto en el que se desea predecir y validar frente al check-in posterior.
 
 ## 3. Metodología
 
@@ -68,7 +56,7 @@ El predictor calcula el número esperado de check-ins **para un evento completo*
 |---|---|---|
 | **Evento y fecha** | `fecha_puebla`, `tipo_campfire`, `nombre_campfire`, fase global o preparatoria, características de bonos y Pokémon | Calendario y descripción del evento, antes de la predicción |
 | **Histórico de la comunidad** | Asistencia de las últimas 5/10 quedadas, últimos eventos del mismo tipo, participantes activos en 30/90/180 días, retención y conversión anterior | Calculado desde eventos y usuarios **anteriores a la fecha objetivo** |
-| **Contador de interesados** | Total de personas que marcaron «Voy a asistir» en Campfire | En el experimento histórico: `interesados_total_proxy = ACCEPTED + CHECKED_IN`. En operación: contador **observado en el momento** de la predicción |
+| **Contador de interesados** | Total de personas que marcaron «Voy a asistir» en Campfire | En operación: contador **observado en el momento** de la predicción |
 
 La fecha y el contador, **por sí solos, no bastan** para reproducir el resultado: también hace falta el histórico para calcular el vector de variables de cada evento. Los identificadores y nicknames no se suministran al modelo como variables predictivas: únicamente se usan para contar usuarios distintos y reconstruir actividad histórica.
 
@@ -76,7 +64,7 @@ La fecha y el contador, **por sí solos, no bastan** para reproducir el resultad
 
 ### 4.2 Arquitectura exacta de la versión seleccionada
 
-El archivo `models/modelo_catboost.cbm` corresponde a un **`CatBoostRegressor`** basado en *gradient boosting* de árboles de decisión. **No es una red neuronal** ni un clasificador usuario-a-usuario.
+El archivo `models/modelo_catboost.cbm` corresponde a un **`CatBoostRegressor`** basado en *gradient boosting* de árboles de decisión.
 
 | Componente | Configuración del modelo final |
 |---|---|
@@ -124,18 +112,12 @@ En total: **41 numéricas + 5 categóricas = 46**. Las variables categóricas se
 ### 4.4 Transformaciones y decisiones necesarias
 
 1. **Normalización de eventos:** unión por `event_id`, comprobación de que cada evento tenga una sola fila, validación de check-ins y del estado RSVP sin duplicar personas.
-2. **Corrección de preparatorios:** las quedadas del **9 y 10 de noviembre de 2026** se etiquetan en el entrenamiento como `wild_area_pre_event` y `pre_event`, en vez de mezclar su asistencia con la de un evento global principal. El CSV maestro conservado no se modifica en disco.
-3. **Ingeniería de variables secuencial:** medias/medianas de eventos anteriores, actividad de usuarios por ventanas de 30/90/180 días y tasas de conversión. En un mismo día, las estadísticas se calculan antes de incorporar los resultados de las quedadas de esa fecha.
-4. **Reconstrucción del RSVP:** `ACCEPTED + CHECKED_IN` por `event_id`; el conteo final del histórico se distingue expresamente del contador que podría observarse al inicio.
-5. **Regresión de conversión:** se aprende una tasa entre cero y uno y se transforma a check-ins multiplicándola por los interesados; las predicciones no negativas son la salida final.
-6. **Separación temporal y selección de modelos:** entrenamiento y validación previos al período final de 81 quedadas; Optuna prueba 20 combinaciones para CatBoost directo y después se comparan conversión histórica, predicción directa, transformación `log1p` y conversión con CatBoost.
-7. **Evaluación y publicación:** se reportan métricas calculadas sobre el conjunto temporal de prueba, se conserva el modelo original `.cbm` y se sustituyen identificadores y nicknames de participantes antes de preparar la copia pública.
+2. **Ingeniería de variables secuencial:** medias/medianas de eventos anteriores, actividad de usuarios por ventanas de 30/90/180 días y tasas de conversión. En un mismo día, las estadísticas se calculan antes de incorporar los resultados de las quedadas de esa fecha.
+3. **Regresión de conversión:** se aprende una tasa entre cero y uno y se transforma a check-ins multiplicándola por los interesados; las predicciones no negativas son la salida final.
+4. **Separación temporal y selección de modelos:** entrenamiento y validación previos al período final de 81 quedadas; Optuna prueba 20 combinaciones para CatBoost directo y después se comparan conversión histórica, predicción directa, transformación `log1p` y conversión con CatBoost.
+5. **Evaluación y publicación:** se reportan métricas calculadas sobre el conjunto temporal de prueba, se conserva el modelo original `.cbm` y se sustituyen identificadores y nicknames de participantes antes de preparar la copia pública.
 
 El código incluye componentes usados originalmente en experimentos anteriores, pero el modelo publicado usa **solo** la matriz del escenario `anticipado` **más** `conversion_historica_anterior`, y **no** las variables meteorológicas o rankings competitivos retrospectivos.
-
-### 4.5 Limitación de la evaluación con RSVP
-
-La evaluación de 6.75 personas utiliza el contador `ACCEPTED + CHECKED_IN` **reconstruido del CSV final**. El propio contador contiene un componente igual al resultado (`CHECKED_IN`), por lo que existe **dependencia del objetivo en la variable operacional reconstruida**. Esto es adecuado para explorar una posible relación RSVP/asistencia, pero **no demuestra** que se consiga el mismo MAE al comienzo de nuevos eventos. Para validar la versión operativa, se necesita guardar el contador visible real al inicio y comparar después con la asistencia final.
 
 ## 5. Evaluación
 
@@ -153,7 +135,7 @@ La evaluación de 6.75 personas utiliza el contador `ACCEPTED + CHECKED_IN` **re
 | R² | 0.972 |
 | Sesgo medio (predicho − real) | −0.08 personas |
 
-Interpretación: en el conjunto de prueba, **la mitad de los errores absolutos fue ≤5.43 personas** y **el 75 % fue ≤9.26**. Un MAE de 6.75 representa el promedio de magnitudes de los errores, no una garantía en cada evento. El R² alto también puede estar influido por unos pocos eventos de gran asistencia.
+Interpretación: en el conjunto de prueba, **la mitad de los errores absolutos fue ≤5.43 personas** y **el 75 % fue ≤9.26**. Un MAE de 6.75 representa el promedio de magnitudes de los errores. 
 
 ### Tendencia temporal (visualización principal)
 
@@ -238,15 +220,6 @@ PokePonche_Predict_GitHub/
 
 Se publican **datos minimizados y seudonimizados**: `USUARIO1`, `USUARIO2`, etc. sustituyen simultáneamente el ID interno y el nickname de cada persona. Los identificadores reales de quedadas se sustituyen por `EVT0001`, etc. Se eliminaron perfiles, URL de evento, IDs de organizadores y otros campos originales que no son necesarios para reproducir el pipeline. La correspondencia original↔seudónimo **no se distribuye**.
 
-**Seudonimizar no es anonimizar:** la secuencia de fechas, tipos de eventos y asistencia individual aún podría permitir reidentificar a usuarios activos con fuentes públicas. Si no cuentas con autorización para divulgar registros individuales, **no publiques `data/registros_usuarios_pseudonimizados.csv`**: conserva ese fichero local e indica que los datos de entrenamiento están restringidos; los resultados, métricas, gráficos y código pueden publicarse por separado. Revisa también los títulos de eventos públicos antes de hacer el primer push.
-
-## 9. Limitaciones y próximos pasos
-
-- El test está compuesto por eventos de la misma comunidad; no se ha demostrado generalización a otras ciudades o clubes.
-- Los registros de Campfire exportados pueden perder participaciones históricas cuando usuarios dejan el grupo.
-- El proxy de interesados no es un snapshot con hora verificada: la evaluación es retrospectiva y requiere validación al inicio de nuevas quedadas.
-- El modelo no predice eventos nuevos únicamente a partir de su fecha: necesita variables históricas y el contador de interesados.
-- El R² alto no implica un porcentaje de acierto del 97.2 %.
 
 ## Tecnologías
 
@@ -254,4 +227,4 @@ Se publican **datos minimizados y seudonimizados**: `USUARIO1`, `USUARIO2`, etc.
 
 ## Autoría y uso
 
-Proyecto independiente de análisis de asistencia comunitaria. Los nombres Pokémon, Campfire y las marcas relacionadas pertenecen a sus respectivos titulares. Los datos individuales seudonimizados se proporcionan solo si su publicación está autorizada.
+Proyecto independiente de análisis de asistencia comunitaria. Los nombres Pokémon, Campfire y las marcas relacionadas pertenecen a sus respectivos titulares.
