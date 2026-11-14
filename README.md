@@ -1,4 +1,4 @@
-# PokePonche Predict 🎯
+# PokePonche Predict
 
 **Predicting attendance at Pokémon GO community meetups using CatBoost, participation records, and an RSVP interest counter.**
 
